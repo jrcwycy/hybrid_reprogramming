@@ -1,0 +1,69 @@
+It looks like no pipeline was executed in this folder (or execution history is empty)
+2025-04-02 20:34:23,883 [INFO] Config file path: ./config.yaml
+2025-04-02 20:34:23,883 [INFO] Force overwrite: True
+2025-04-02 20:34:24,667 [INFO] Nextflow is available.
+2025-04-02 20:34:24,669 [INFO] Loaded configuration:
+2025-04-02 20:34:24,669 [INFO] {
+    "paths": {
+        "output_directory": "/scratch/indikar_root/indikar1/shared_data/hsc_epi2me/",
+        "fastq_paths": "fastq_paths.txt",
+        "ref_genome_dir": "/nfs/turbo/umms-indikar/shared/projects/reference_genome/prebuilt/refdata-gex-GRCh38-2024-A",
+        "nextflow": "/nfs/turbo/umms-indikar/Ram/tools"
+    },
+    "nextflow": {
+        "name": "hsc_epi2me_nextflow",
+        "nextflow_config": "./nextflow.config",
+        "numba_config": "./numba.config"
+    },
+    "pipeline": {
+        "expected_cells": 10000,
+        "kit": "3prime:v3",
+        "full_length_only": true,
+        "threads": 16,
+        "fastq_chunk": 1000000,
+        "barcode_adapter1_suff_length": 10,
+        "barcode_min_quality": 15,
+        "barcode_max_ed": 2,
+        "barcode_min_ed_diff": 2,
+        "gene_assigns_minqv": 30,
+        "matrix_min_genes": 5,
+        "matrix_min_cells": 3,
+        "matrix_max_mito": 20,
+        "matrix_norm_count": 10000
+    }
+}
+2025-04-02 20:34:24,718 [INFO] Overwriting existing output directory: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/
+2025-04-02 20:34:24,749 [INFO] Created output directory: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/
+2025-04-02 20:34:24,749 [INFO] Created working directory: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/work/
+2025-04-02 20:34:24,754 [INFO] Running pipeline for 28 FASTQs from: fastq_paths.txt
+2025-04-02 20:34:24,754 [INFO] Compiling inputs to: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq
+2025-04-02 20:34:24,773 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Gridr1.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/GridION_run1/merged.fastq.gz
+2025-04-02 20:34:24,774 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Gridr2.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/GridION_run2/merged.fastq.gz
+2025-04-02 20:34:24,774 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Gridr3.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/GridION_run3/merged.fastq.gz
+2025-04-02 20:34:24,775 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Gridr4.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/GridION_run4/merged.fastq.gz
+2025-04-02 20:34:24,775 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r5.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/P2_run5/merged.fastq.gz
+2025-04-02 20:34:24,775 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r6.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/P2_run6/merged.fastq.gz
+2025-04-02 20:34:24,776 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r7.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/P2_run7/merged.fastq.gz
+2025-04-02 20:34:24,776 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run6x0426.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run6_04_26.fastq.gz
+2025-04-02 20:34:24,777 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run5x0314.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run5_03_14.fastq.gz
+2025-04-02 20:34:24,777 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run1x0312.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run1_03_12.fastq.gz
+2025-04-02 20:34:24,778 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run6x0314.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run6_03_14.fastq.gz
+2025-04-02 20:34:24,778 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run7x0426.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run7_04_26.fastq.gz
+2025-04-02 20:34:24,778 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run2x0313.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run2_03_13.fastq.gz
+2025-04-02 20:34:24,779 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run7x0315.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run7_03_15.fastq.gz
+2025-04-02 20:34:24,779 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run2x0416.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run2_04_16.fastq.gz
+2025-04-02 20:34:24,779 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run8x0426.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run8_04_26.fastq.gz
+2025-04-02 20:34:24,780 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run4x0314.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run4_03_14.fastq.gz
+2025-04-02 20:34:24,780 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run3x0314.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run3_03_14.fastq.gz
+2025-04-02 20:34:24,780 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run1x0415.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run1_04_15.fastq.gz
+2025-04-02 20:34:24,781 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run4x0422.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run4_04_22.fastq.gz
+2025-04-02 20:34:24,781 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run9x0503.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run9_05_03.fastq.gz
+2025-04-02 20:34:24,782 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Run3x0418.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/adaptive_sampling/merged_fastq/Run3_04_18.fastq.gz
+2025-04-02 20:34:24,782 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r8a.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/05_17_2024_iHSC_merged/P2r8a_merged.fastq.gz
+2025-04-02 20:34:24,783 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r8d.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/05_17_2024_iHSC_merged/P2r8d_merged.fastq.gz
+2025-04-02 20:34:24,783 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/Gridr5.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/05_17_2024_iHSC_merged/Gridr5_merged.fastq.gz
+2025-04-02 20:34:24,783 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r8.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/05_17_2024_iHSC_merged/P2r8_merged.fastq.gz
+2025-04-02 20:34:24,784 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r8b.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/05_17_2024_iHSC_merged/P2r8b_merged.fastq.gz
+2025-04-02 20:34:24,784 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq/P2r8c.fastq -> /nfs/turbo/umms-indikar/shared/projects/HSC/data/10xBarcoded_SingleCell/05_17_2024_iHSC_merged/P2r8c_merged.fastq.gz
+2025-04-02 20:34:24,784 [INFO]  ---------- Prepared Nextflow command: 
+2025-04-02 20:34:24,784 [INFO] nextflow run epi2me-labs/wf-single-cell --fastq /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/fastq --ref_genome_dir /nfs/turbo/umms-indikar/shared/projects/reference_genome/prebuilt/refdata-gex-GRCh38-2024-A --out_dir /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/ -w /scratch/indikar_root/indikar1/shared_data/hsc_epi2me/work/ -c ./numba.config -name hsc_epi2me_nextflow -with-report -profile singularity --expected_cells 10000  --kit 3prime:v3  --full_length_only True  --threads 16  --fastq_chunk 1000000  --barcode_adapter1_suff_length 10  --barcode_min_quality 15  --barcode_max_ed 2  --barcode_min_ed_diff 2  --gene_assigns_minqv 30  --matrix_min_genes 5  --matrix_min_cells 3  --matrix_max_mito 20  --matrix_norm_count 10000
