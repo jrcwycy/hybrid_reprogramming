@@ -1,0 +1,53 @@
+2025-05-01 08:26:00,013 [INFO] Config file path: ./config.yaml
+2025-05-01 08:26:00,013 [INFO] Force overwrite: True
+2025-05-01 08:26:00,784 [INFO] Nextflow is available.
+2025-05-01 08:26:00,788 [INFO] Configuration for: paths
+2025-05-01 08:26:00,788 [INFO] 	 output_directory : /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/
+2025-05-01 08:26:00,788 [INFO] 	 fastq_paths : fastq_paths.txt
+2025-05-01 08:26:00,788 [INFO] 	 ref_genome_dir : /nfs/turbo/umms-indikar/shared/projects/reference_genome/prebuilt/refdata-gex-GRCh38-2024-A
+2025-05-01 08:26:00,788 [INFO] 	 nextflow : /nfs/turbo/umms-indikar/Ram/tools
+2025-05-01 08:26:00,788 [INFO] Configuration for: nextflow
+2025-05-01 08:26:00,788 [INFO] 	 process_name : hyb_epi2me
+2025-05-01 08:26:00,788 [INFO] 	 sample_name : hyb_epi2me
+2025-05-01 08:26:00,788 [INFO] 	 nextflow_config : ./nextflow.config
+2025-05-01 08:26:00,788 [INFO] Configuration for: pipeline
+2025-05-01 08:26:00,788 [INFO] 	 expected_cells : 10000
+2025-05-01 08:26:00,788 [INFO] 	 kit : 3prime:v4
+2025-05-01 08:26:00,788 [INFO] 	 full_length_only : True
+2025-05-01 08:26:00,788 [INFO] 	 threads : 32
+2025-05-01 08:26:00,788 [INFO] 	 fastq_chunk : 1000000
+2025-05-01 08:26:00,788 [INFO] 	 barcode_adapter1_suff_length : 10
+2025-05-01 08:26:00,788 [INFO] 	 barcode_min_quality : 15
+2025-05-01 08:26:00,788 [INFO] 	 barcode_max_ed : 2
+2025-05-01 08:26:00,788 [INFO] 	 barcode_min_ed_diff : 2
+2025-05-01 08:26:00,788 [INFO] 	 gene_assigns_minqv : 30
+2025-05-01 08:26:00,788 [INFO] 	 matrix_min_genes : 5
+2025-05-01 08:26:00,788 [INFO] 	 matrix_min_cells : 3
+2025-05-01 08:26:00,788 [INFO] 	 matrix_max_mito : 20
+2025-05-01 08:26:00,788 [INFO] 	 matrix_norm_count : 10000
+2025-05-01 08:26:00,794 [INFO] Created output directory: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/
+2025-05-01 08:26:00,794 [INFO] Created working directory: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/
+2025-05-01 08:26:00,796 [INFO] Running pipeline for 20 FASTQs from: fastq_paths.txt
+2025-05-01 08:26:00,796 [INFO] Compiling inputs to: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq
+2025-05-01 08:26:00,799 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e1_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e1_r01.fastq.gz
+2025-05-01 08:26:00,800 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r04.fastq.gz
+2025-05-01 08:26:00,801 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r02.fastq.gz
+2025-05-01 08:26:00,801 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/run1.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/run1.fastq.gz
+2025-05-01 08:26:00,802 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r01.fastq.gz
+2025-05-01 08:26:00,803 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/run1_a.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/run1_a.fastq.gz
+2025-05-01 08:26:00,804 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e2_r03.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e2_r03.fastq.gz
+2025-05-01 08:26:00,804 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r02.fastq.gz
+2025-05-01 08:26:00,805 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e2_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e2_r01.fastq.gz
+2025-05-01 08:26:00,806 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r05.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r05.fastq.gz
+2025-05-01 08:26:00,807 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e1_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e1_r04.fastq.gz
+2025-05-01 08:26:00,807 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e2_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e2_r02.fastq.gz
+2025-05-01 08:26:00,808 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r03.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r03.fastq.gz
+2025-05-01 08:26:00,809 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r05.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r05.fastq.gz
+2025-05-01 08:26:00,810 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e2_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e2_r04.fastq.gz
+2025-05-01 08:26:00,810 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r01.fastq.gz
+2025-05-01 08:26:00,811 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r04.fastq.gz
+2025-05-01 08:26:00,812 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e2_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e2_r02.fastq.gz
+2025-05-01 08:26:00,812 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r03.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r03.fastq.gz
+2025-05-01 08:26:00,813 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/run2_1.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/run2_1.fastq.gz
+2025-05-01 08:26:00,813 [INFO]  ---------- Prepared Nextflow command: 
+2025-05-01 08:26:00,814 [INFO] nextflow run epi2me-labs/wf-single-cell --fastq /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq --ref_genome_dir /nfs/turbo/umms-indikar/shared/projects/reference_genome/prebuilt/refdata-gex-GRCh38-2024-A --out_dir /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/ --sample hyb_epi2me -work-dir /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ -c ./nextflow.config -resume -name hyb_epi2me -ansi-log false -with-report -with-dag -with-timeline -with-trace -profile singularity --expected_cells 10000  --kit 3prime:v4  --full_length_only True  --threads 32  --fastq_chunk 1000000  --barcode_adapter1_suff_length 10  --barcode_min_quality 15  --barcode_max_ed 2  --barcode_min_ed_diff 2  --gene_assigns_minqv 30  --matrix_min_genes 5  --matrix_min_cells 3  --matrix_max_mito 20  --matrix_norm_count 10000
