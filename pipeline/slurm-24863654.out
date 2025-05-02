@@ -1,0 +1,1454 @@
+2025-05-01 08:26:00,013 [INFO] Config file path: ./config.yaml
+2025-05-01 08:26:00,013 [INFO] Force overwrite: True
+2025-05-01 08:26:00,784 [INFO] Nextflow is available.
+2025-05-01 08:26:00,788 [INFO] Configuration for: paths
+2025-05-01 08:26:00,788 [INFO] 	 output_directory : /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/
+2025-05-01 08:26:00,788 [INFO] 	 fastq_paths : fastq_paths.txt
+2025-05-01 08:26:00,788 [INFO] 	 ref_genome_dir : /nfs/turbo/umms-indikar/shared/projects/reference_genome/prebuilt/refdata-gex-GRCh38-2024-A
+2025-05-01 08:26:00,788 [INFO] 	 nextflow : /nfs/turbo/umms-indikar/Ram/tools
+2025-05-01 08:26:00,788 [INFO] Configuration for: nextflow
+2025-05-01 08:26:00,788 [INFO] 	 process_name : hyb_epi2me
+2025-05-01 08:26:00,788 [INFO] 	 sample_name : hyb_epi2me
+2025-05-01 08:26:00,788 [INFO] 	 nextflow_config : ./nextflow.config
+2025-05-01 08:26:00,788 [INFO] Configuration for: pipeline
+2025-05-01 08:26:00,788 [INFO] 	 expected_cells : 10000
+2025-05-01 08:26:00,788 [INFO] 	 kit : 3prime:v4
+2025-05-01 08:26:00,788 [INFO] 	 full_length_only : True
+2025-05-01 08:26:00,788 [INFO] 	 threads : 32
+2025-05-01 08:26:00,788 [INFO] 	 fastq_chunk : 1000000
+2025-05-01 08:26:00,788 [INFO] 	 barcode_adapter1_suff_length : 10
+2025-05-01 08:26:00,788 [INFO] 	 barcode_min_quality : 15
+2025-05-01 08:26:00,788 [INFO] 	 barcode_max_ed : 2
+2025-05-01 08:26:00,788 [INFO] 	 barcode_min_ed_diff : 2
+2025-05-01 08:26:00,788 [INFO] 	 gene_assigns_minqv : 30
+2025-05-01 08:26:00,788 [INFO] 	 matrix_min_genes : 5
+2025-05-01 08:26:00,788 [INFO] 	 matrix_min_cells : 3
+2025-05-01 08:26:00,788 [INFO] 	 matrix_max_mito : 20
+2025-05-01 08:26:00,788 [INFO] 	 matrix_norm_count : 10000
+2025-05-01 08:26:00,794 [INFO] Created output directory: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/
+2025-05-01 08:26:00,794 [INFO] Created working directory: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/
+2025-05-01 08:26:00,796 [INFO] Running pipeline for 20 FASTQs from: fastq_paths.txt
+2025-05-01 08:26:00,796 [INFO] Compiling inputs to: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq
+2025-05-01 08:26:00,799 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e1_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e1_r01.fastq.gz
+2025-05-01 08:26:00,800 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r04.fastq.gz
+2025-05-01 08:26:00,801 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r02.fastq.gz
+2025-05-01 08:26:00,801 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/run1.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/run1.fastq.gz
+2025-05-01 08:26:00,802 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r01.fastq.gz
+2025-05-01 08:26:00,803 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/run1_a.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/run1_a.fastq.gz
+2025-05-01 08:26:00,804 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e2_r03.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e2_r03.fastq.gz
+2025-05-01 08:26:00,804 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r02.fastq.gz
+2025-05-01 08:26:00,805 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e2_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e2_r01.fastq.gz
+2025-05-01 08:26:00,806 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r05.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r05.fastq.gz
+2025-05-01 08:26:00,807 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e1_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e1_r04.fastq.gz
+2025-05-01 08:26:00,807 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p2e2_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p2e2_r02.fastq.gz
+2025-05-01 08:26:00,808 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e4_r03.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e4_r03.fastq.gz
+2025-05-01 08:26:00,809 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r05.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r05.fastq.gz
+2025-05-01 08:26:00,810 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e2_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e2_r04.fastq.gz
+2025-05-01 08:26:00,810 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r01.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r01.fastq.gz
+2025-05-01 08:26:00,811 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r04.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r04.fastq.gz
+2025-05-01 08:26:00,812 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e2_r02.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e2_r02.fastq.gz
+2025-05-01 08:26:00,812 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/hyb_p1e3_r03.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/hyb_p1e3_r03.fastq.gz
+2025-05-01 08:26:00,813 [INFO] 	Created symlink: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq/hybrid/run2_1.fastq.gz -> /nfs/turbo/umms-indikar/shared/projects/hybrid_reprogramming/data/fastq/gene_expression/library_2_reads_merged/run2_1.fastq.gz
+2025-05-01 08:26:00,813 [INFO]  ---------- Prepared Nextflow command: 
+2025-05-01 08:26:00,814 [INFO] nextflow run epi2me-labs/wf-single-cell --fastq /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq --ref_genome_dir /nfs/turbo/umms-indikar/shared/projects/reference_genome/prebuilt/refdata-gex-GRCh38-2024-A --out_dir /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/ --sample hyb_epi2me -work-dir /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ -c ./nextflow.config -resume -name hyb_epi2me -ansi-log false -with-report -with-dag -with-timeline -with-trace -profile singularity --expected_cells 10000  --kit 3prime:v4  --full_length_only True  --threads 32  --fastq_chunk 1000000  --barcode_adapter1_suff_length 10  --barcode_min_quality 15  --barcode_max_ed 2  --barcode_min_ed_diff 2  --gene_assigns_minqv 30  --matrix_min_genes 5  --matrix_min_cells 3  --matrix_max_mito 20  --matrix_norm_count 10000
+[33mNextflow 24.10.6 is available - Please consider updating your version to it(B[m
+N E X T F L O W  ~  version 24.10.4
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [4580fc3d44]
+WARN: It appears you have never run this project before -- Option `-resume` is ignored
+Launching `https://github.com/epi2me-labs/wf-single-cell` [hyb_epi2me] DSL2 - revision: eaceb66db1 [master]
+
+[0;92m||||||||||   [0m[2m_____ ____ ___ ____  __  __ _____      _       _
+[0;92m||||||||||  [0m[2m| ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+[0;33m|||||       [0m[2m|  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+[0;33m|||||       [0m[2m| |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+[0;94m||||||||||  [0m[2m|_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+[0;94m||||||||||  [0m[1mwf-single-cell v3.0.1-geaceb66[0m
+[2m--------------------------------------------------------------------------------[0m
+[1mCore Nextflow options[0m
+[0;34mrevision        : [0;32mmaster[0m
+[0;34mrunName         : [0;32mhyb_epi2me[0m
+[0;34mcontainerEngine : [0;32msingularity[0m
+[0;34mcontainer       : [0;32m[withLabel:singlecell:ontresearch/wf-single-cell:shab5b0dea0efc4685f74c8b4f91c979c587e23a020, withLabel:wf_common:ontresearch/wf-common:shaabceef445fb63214073cbf5836fdd33c04be4ac7][0m
+[0;34mlaunchDir       : [0;32m/home/cstansbu/git_repositories/hybrid_reprogramming/pipeline[0m
+[0;34mworkDir         : [0;32m/scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work[0m
+[0;34mprojectDir      : [0;32m/home/cstansbu/.nextflow/assets/epi2me-labs/wf-single-cell[0m
+[0;34muserName        : [0;32mcstansbu[0m
+[0;34mprofile         : [0;32msingularity[0m
+[0;34mconfigFiles     : [0;32m/home/cstansbu/.nextflow/assets/epi2me-labs/wf-single-cell/nextflow.config, /home/cstansbu/git_repositories/hybrid_reprogramming/pipeline/nextflow.config, /home/cstansbu/git_repositories/hybrid_reprogramming/pipeline/./nextflow.config[0m
+
+[1mInput Options[0m
+[0;34mfastq           : [0;32m/scratch/indikar_root/indikar1/shared_data/hyb_epi2me/fastq[0m
+[0;34mref_genome_dir  : [0;32m/nfs/turbo/umms-indikar/shared/projects/reference_genome/prebuilt/refdata-gex-GRCh38-2024-A[0m
+[0;34mkit             : [0;32m3prime:v4[0m
+[0;34mexpected_cells  : [0;32m10000[0m
+
+[1mSample Options[0m
+[0;34msample          : [0;32mhyb_epi2me[0m
+
+[1mOutput Options[0m
+[0;34mout_dir         : [0;32m/scratch/indikar_root/indikar1/shared_data/hyb_epi2me/[0m
+
+[1mAdvanced options[0m
+[0;34mthreads         : [0;32m32[0m
+[0;34mmatrix_min_genes: [0;32m5[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+[2m--------------------------------------------------------------------------------[0m
+If you use epi2me-labs/wf-single-cell for your analysis please cite:
+
+* The nf-core framework
+https://doi.org/10.1038/s41587-020-0439-x
+
+
+[2m--------------------------------------------------------------------------------[0m
+This is epi2me-labs/wf-single-cell v3.0.1-geaceb66.
+[2m--------------------------------------------------------------------------------[0m
+Searching input for [.fastq, .fastq.gz, .fq, .fq.gz] files.
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+Pulling Singularity image docker://ontresearch/wf-single-cell:shab5b0dea0efc4685f74c8b4f91c979c587e23a020 [cache /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/singularity/ontresearch-wf-single-cell-shab5b0dea0efc4685f74c8b4f91c979c587e23a020.img]
+Pulling Singularity image docker://ontresearch/wf-common:shaabceef445fb63214073cbf5836fdd33c04be4ac7 [cache /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/singularity/ontresearch-wf-common-shaabceef445fb63214073cbf5836fdd33c04be4ac7.img]
+[67/dcddd0] Submitted process > fastcat (1)
+[d4/a42575] Submitted process > pipeline:getVersions
+[9e/e5ffb9] Submitted process > pipeline:getParams
+[b4/c693ca] Submitted process > pipeline:preprocess:call_paftools
+[41/bd44d1] Submitted process > pipeline:process_bams:split_gtf_by_chroms
+[bf/bd5933] Submitted process > pipeline:preprocess:build_minimap_index
+[c7/679e34] Submitted process > parse_kit_metadata (1)
+[b9/637dcb] Submitted process > pipeline:preprocess:call_adapter_scan (25)
+[67/14f925] Submitted process > pipeline:preprocess:call_adapter_scan (30)
+[21/63989e] Submitted process > pipeline:preprocess:call_adapter_scan (5)
+[68/f88e1f] Submitted process > pipeline:preprocess:call_adapter_scan (4)
+[cd/cb848b] Submitted process > pipeline:preprocess:call_adapter_scan (6)
+[aa/c8aced] Submitted process > pipeline:preprocess:call_adapter_scan (21)
+[6a/159c78] Submitted process > pipeline:preprocess:call_adapter_scan (9)
+[97/1847f7] Submitted process > pipeline:preprocess:call_adapter_scan (24)
+[03/229670] Submitted process > pipeline:preprocess:call_adapter_scan (23)
+[7a/0ebd5d] Submitted process > pipeline:preprocess:call_adapter_scan (22)
+[dc/bdb920] Submitted process > pipeline:preprocess:call_adapter_scan (15)
+[17/d08cf9] Submitted process > pipeline:preprocess:call_adapter_scan (8)
+[d2/e980b9] Submitted process > pipeline:preprocess:call_adapter_scan (27)
+[d9/518694] Submitted process > pipeline:preprocess:call_adapter_scan (26)
+[fb/2e9a26] Submitted process > pipeline:preprocess:call_adapter_scan (14)
+[40/5c1ae9] Submitted process > pipeline:preprocess:call_adapter_scan (32)
+[9d/b2efa5] Submitted process > pipeline:preprocess:call_adapter_scan (1)
+[d8/a185ff] Submitted process > pipeline:preprocess:call_adapter_scan (28)
+[61/d3488e] Submitted process > pipeline:preprocess:call_adapter_scan (2)
+[b1/179c7e] Submitted process > pipeline:preprocess:call_adapter_scan (13)
+[98/41b710] Submitted process > pipeline:preprocess:call_adapter_scan (19)
+[cb/1d8ad8] Submitted process > pipeline:preprocess:call_adapter_scan (31)
+[1b/473a9f] Submitted process > pipeline:preprocess:call_adapter_scan (12)
+[ee/79a8e2] Submitted process > pipeline:preprocess:call_adapter_scan (18)
+[9a/db4467] Submitted process > pipeline:preprocess:call_adapter_scan (17)
+[ad/00f896] Submitted process > pipeline:preprocess:call_adapter_scan (29)
+[09/1b64b1] Submitted process > pipeline:preprocess:call_adapter_scan (11)
+[23/c0cfdb] Submitted process > pipeline:preprocess:call_adapter_scan (20)
+[ea/266332] Submitted process > pipeline:preprocess:call_adapter_scan (16)
+[74/9dc65d] Submitted process > pipeline:preprocess:call_adapter_scan (10)
+[e9/e750b2] Submitted process > pipeline:preprocess:call_adapter_scan (3)
+[60/4e85df] Submitted process > pipeline:preprocess:call_adapter_scan (7)
+[2a/b1dfed] Submitted process > pipeline:preprocess:call_adapter_scan (33)
+[3d/5dee7c] Submitted process > pipeline:preprocess:call_adapter_scan (34)
+[f2/3f8f03] Submitted process > pipeline:preprocess:call_adapter_scan (35)
+[87/7464b4] Submitted process > pipeline:preprocess:call_adapter_scan (36)
+[3b/6e28d1] Submitted process > pipeline:preprocess:call_adapter_scan (38)
+[9d/f9e62b] Submitted process > pipeline:preprocess:call_adapter_scan (37)
+[fa/8f12c9] Submitted process > pipeline:preprocess:call_adapter_scan (39)
+[b8/e3f691] Submitted process > pipeline:preprocess:call_adapter_scan (40)
+[f8/169047] Submitted process > pipeline:preprocess:call_adapter_scan (41)
+[04/220e0f] Submitted process > pipeline:preprocess:call_adapter_scan (44)
+[e3/371724] Submitted process > pipeline:preprocess:call_adapter_scan (43)
+[0e/1cbe63] Submitted process > pipeline:preprocess:call_adapter_scan (42)
+[97/3eafda] Submitted process > pipeline:preprocess:call_adapter_scan (46)
+[bd/9def5c] Submitted process > pipeline:preprocess:call_adapter_scan (48)
+[f9/c64f05] Submitted process > pipeline:preprocess:call_adapter_scan (45)
+[45/6a6080] Submitted process > pipeline:preprocess:call_adapter_scan (47)
+[59/d46500] Submitted process > pipeline:preprocess:call_adapter_scan (49)
+[16/9276a8] Submitted process > pipeline:preprocess:call_adapter_scan (50)
+[18/6bd0a7] Submitted process > pipeline:preprocess:call_adapter_scan (51)
+[38/0ce417] Submitted process > pipeline:preprocess:call_adapter_scan (52)
+[ee/9dc1e6] Submitted process > pipeline:preprocess:call_adapter_scan (53)
+[47/253187] Submitted process > pipeline:preprocess:call_adapter_scan (56)
+[ab/5374e9] Submitted process > pipeline:preprocess:call_adapter_scan (54)
+[7d/524fa9] Submitted process > pipeline:preprocess:call_adapter_scan (55)
+[10/be90b3] Submitted process > pipeline:preprocess:call_adapter_scan (57)
+[0e/9b8df4] Submitted process > pipeline:preprocess:call_adapter_scan (59)
+[60/8b60bb] Submitted process > pipeline:preprocess:call_adapter_scan (58)
+[64/aba34d] Submitted process > pipeline:preprocess:call_adapter_scan (61)
+[55/f0ab3d] Submitted process > pipeline:preprocess:call_adapter_scan (60)
+[2d/15ad4b] Submitted process > pipeline:preprocess:call_adapter_scan (62)
+[99/b2833e] Submitted process > pipeline:preprocess:call_adapter_scan (64)
+[e7/f99e94] Submitted process > pipeline:preprocess:call_adapter_scan (65)
+[20/7f1637] Submitted process > pipeline:preprocess:call_adapter_scan (63)
+[79/e2c4bc] Submitted process > pipeline:preprocess:call_adapter_scan (66)
+[ea/c01f18] Submitted process > pipeline:preprocess:call_adapter_scan (67)
+[53/05595e] Submitted process > pipeline:preprocess:call_adapter_scan (69)
+[5f/10f4b5] Submitted process > pipeline:preprocess:call_adapter_scan (68)
+[f7/4e8910] Submitted process > pipeline:preprocess:call_adapter_scan (71)
+[27/04e4b9] Submitted process > pipeline:preprocess:call_adapter_scan (72)
+[b3/5580fe] Submitted process > pipeline:preprocess:call_adapter_scan (70)
+[61/55c5b7] Submitted process > pipeline:preprocess:call_adapter_scan (74)
+[77/f15d01] Submitted process > pipeline:preprocess:call_adapter_scan (73)
+[e8/8bb60f] Submitted process > pipeline:preprocess:call_adapter_scan (75)
+[8b/72a52c] Submitted process > pipeline:preprocess:call_adapter_scan (76)
+[91/6b1630] Submitted process > pipeline:preprocess:call_adapter_scan (77)
+[6a/80e5c4] Submitted process > pipeline:preprocess:call_adapter_scan (79)
+[b2/e36fc7] Submitted process > pipeline:preprocess:call_adapter_scan (78)
+[3a/157f91] Submitted process > pipeline:preprocess:call_adapter_scan (80)
+[47/fdf1c9] Submitted process > pipeline:preprocess:call_adapter_scan (81)
+[90/db0b5c] Submitted process > pipeline:preprocess:call_adapter_scan (82)
+[3e/bde576] Submitted process > pipeline:preprocess:call_adapter_scan (83)
+[e2/883fc7] Submitted process > pipeline:preprocess:call_adapter_scan (84)
+[81/d07f84] Submitted process > pipeline:preprocess:call_adapter_scan (85)
+[db/4ad5f1] Submitted process > pipeline:preprocess:call_adapter_scan (86)
+[be/59880d] Submitted process > pipeline:preprocess:call_adapter_scan (87)
+[8a/a7e4fc] Submitted process > pipeline:preprocess:call_adapter_scan (88)
+[5e/813cfd] Submitted process > pipeline:preprocess:call_adapter_scan (89)
+[fc/8788e0] Submitted process > pipeline:preprocess:call_adapter_scan (90)
+[05/8a0f8d] Submitted process > pipeline:preprocess:call_adapter_scan (92)
+[95/6b3859] Submitted process > pipeline:preprocess:call_adapter_scan (91)
+[bd/9ceb13] Submitted process > pipeline:preprocess:call_adapter_scan (93)
+[e4/87bc39] Submitted process > pipeline:preprocess:call_adapter_scan (94)
+[7d/aac5b4] Submitted process > pipeline:preprocess:call_adapter_scan (95)
+[b0/93c4fe] Submitted process > pipeline:preprocess:call_adapter_scan (96)
+[f6/139056] Submitted process > pipeline:preprocess:call_adapter_scan (97)
+[1a/fdfb0d] Submitted process > pipeline:preprocess:call_adapter_scan (98)
+[18/eecd39] Submitted process > pipeline:preprocess:call_adapter_scan (100)
+[bc/461354] Submitted process > pipeline:preprocess:call_adapter_scan (99)
+[52/29adba] Submitted process > pipeline:preprocess:call_adapter_scan (102)
+[5d/588562] Submitted process > pipeline:preprocess:call_adapter_scan (103)
+[76/d0d166] Submitted process > pipeline:preprocess:call_adapter_scan (101)
+[88/801323] Submitted process > pipeline:preprocess:call_adapter_scan (105)
+[ee/698341] Submitted process > pipeline:preprocess:call_adapter_scan (104)
+[f9/1018e9] Submitted process > pipeline:preprocess:call_adapter_scan (106)
+[52/969f31] Submitted process > pipeline:preprocess:call_adapter_scan (110)
+[ef/8b9bf9] Submitted process > pipeline:preprocess:call_adapter_scan (107)
+[f0/da525c] Submitted process > pipeline:preprocess:call_adapter_scan (108)
+[33/b94a85] Submitted process > pipeline:preprocess:call_adapter_scan (109)
+[28/add5bf] Submitted process > pipeline:preprocess:call_adapter_scan (111)
+[55/816890] Submitted process > pipeline:preprocess:call_adapter_scan (112)
+[8b/868862] Submitted process > pipeline:preprocess:call_adapter_scan (114)
+[a3/9f770b] Submitted process > pipeline:preprocess:call_adapter_scan (113)
+[0f/6f860b] Submitted process > pipeline:preprocess:call_adapter_scan (117)
+[0f/da9830] Submitted process > pipeline:preprocess:call_adapter_scan (118)
+[ed/3f5051] Submitted process > pipeline:preprocess:call_adapter_scan (116)
+[22/cec347] Submitted process > pipeline:preprocess:call_adapter_scan (115)
+[22/3d1ad8] Submitted process > pipeline:preprocess:call_adapter_scan (120)
+[d5/3a463d] Submitted process > pipeline:preprocess:call_adapter_scan (119)
+[31/ad6d40] Submitted process > pipeline:preprocess:call_adapter_scan (123)
+[b8/f17155] Submitted process > pipeline:preprocess:call_adapter_scan (124)
+[40/731c6c] Submitted process > pipeline:preprocess:call_adapter_scan (125)
+[6a/459e82] Submitted process > pipeline:preprocess:call_adapter_scan (121)
+[87/dbce45] Submitted process > pipeline:preprocess:call_adapter_scan (127)
+[17/e313ee] Submitted process > pipeline:preprocess:call_adapter_scan (128)
+[4f/114f82] Submitted process > pipeline:preprocess:call_adapter_scan (122)
+[3e/2e8c23] Submitted process > pipeline:preprocess:call_adapter_scan (126)
+[87/8338b7] Submitted process > pipeline:preprocess:call_adapter_scan (129)
+[8e/ac5fdd] Submitted process > pipeline:preprocess:call_adapter_scan (131)
+[8f/17962f] Submitted process > pipeline:preprocess:call_adapter_scan (132)
+[74/ef7f88] Submitted process > pipeline:preprocess:call_adapter_scan (130)
+[f4/3bb881] Submitted process > pipeline:preprocess:call_adapter_scan (133)
+[4f/a19597] Submitted process > pipeline:preprocess:call_adapter_scan (135)
+[3b/423aea] Submitted process > pipeline:preprocess:call_adapter_scan (136)
+[63/27b275] Submitted process > pipeline:preprocess:call_adapter_scan (134)
+[43/f0cf92] Submitted process > pipeline:preprocess:call_adapter_scan (137)
+[fa/ca5a52] Submitted process > pipeline:preprocess:call_adapter_scan (139)
+[38/1f0e5f] Submitted process > pipeline:preprocess:call_adapter_scan (140)
+[a6/4857e0] Submitted process > pipeline:preprocess:call_adapter_scan (138)
+[f5/c35ba4] Submitted process > pipeline:preprocess:call_adapter_scan (166)
+[be/12b506] Submitted process > pipeline:preprocess:call_adapter_scan (141)
+[8a/018a1e] Submitted process > pipeline:preprocess:call_adapter_scan (142)
+[1d/4406fe] Submitted process > pipeline:preprocess:call_adapter_scan (144)
+[e9/37b3ef] Submitted process > pipeline:preprocess:call_adapter_scan (145)
+[58/3aeefd] Submitted process > pipeline:preprocess:call_adapter_scan (143)
+[63/a5ba99] Submitted process > pipeline:preprocess:call_adapter_scan (146)
+[d6/623fdf] Submitted process > pipeline:preprocess:call_adapter_scan (147)
+[24/068e55] Submitted process > pipeline:preprocess:call_adapter_scan (148)
+[d8/8bc7c7] Submitted process > pipeline:preprocess:call_adapter_scan (149)
+[f0/bfe5d4] Submitted process > pipeline:preprocess:call_adapter_scan (152)
+[91/50d482] Submitted process > pipeline:preprocess:call_adapter_scan (151)
+[79/913dcf] Submitted process > pipeline:preprocess:call_adapter_scan (155)
+[81/12fe22] Submitted process > pipeline:preprocess:call_adapter_scan (150)
+[1b/5faaa3] Submitted process > pipeline:preprocess:call_adapter_scan (154)
+[05/75cf90] Submitted process > pipeline:preprocess:call_adapter_scan (156)
+[c3/67930a] Submitted process > pipeline:preprocess:call_adapter_scan (153)
+[52/1600f8] Submitted process > pipeline:preprocess:call_adapter_scan (158)
+[4d/cce434] Submitted process > pipeline:preprocess:call_adapter_scan (157)
+[37/54ab3f] Submitted process > pipeline:preprocess:call_adapter_scan (159)
+[50/5f43e9] Submitted process > pipeline:preprocess:call_adapter_scan (160)
+[a1/9019ca] Submitted process > pipeline:preprocess:call_adapter_scan (161)
+[57/40c462] Submitted process > pipeline:preprocess:call_adapter_scan (163)
+[dd/b689b3] Submitted process > pipeline:preprocess:call_adapter_scan (162)
+[df/7dd5a0] Submitted process > pipeline:preprocess:call_adapter_scan (164)
+[f9/97eead] Submitted process > pipeline:preprocess:call_adapter_scan (191)
+[dd/2206cd] Submitted process > pipeline:preprocess:call_adapter_scan (165)
+[db/08e3c4] Submitted process > pipeline:preprocess:call_adapter_scan (167)
+[b1/e6b71a] Submitted process > pipeline:preprocess:call_adapter_scan (168)
+[0a/cdaa66] Submitted process > pipeline:preprocess:call_adapter_scan (169)
+[95/466ba4] Submitted process > pipeline:preprocess:call_adapter_scan (171)
+[96/319441] Submitted process > pipeline:preprocess:call_adapter_scan (170)
+[69/893cf1] Submitted process > pipeline:preprocess:call_adapter_scan (173)
+[48/c56dfa] Submitted process > pipeline:preprocess:call_adapter_scan (200)
+[6f/e6b31c] Submitted process > pipeline:preprocess:call_adapter_scan (172)
+[49/40cfb0] Submitted process > pipeline:preprocess:call_adapter_scan (175)
+[ba/33d888] Submitted process > pipeline:preprocess:call_adapter_scan (174)
+[bf/414ab9] Submitted process > pipeline:preprocess:call_adapter_scan (176)
+[81/4d428d] Submitted process > pipeline:preprocess:call_adapter_scan (177)
+[7d/847c83] Submitted process > pipeline:preprocess:call_adapter_scan (179)
+[00/ce92d8] Submitted process > pipeline:preprocess:call_adapter_scan (178)
+[a0/f73290] Submitted process > pipeline:preprocess:call_adapter_scan (182)
+[2c/8ba3d8] Submitted process > pipeline:preprocess:call_adapter_scan (183)
+[b7/16afa5] Submitted process > pipeline:preprocess:call_adapter_scan (180)
+[2b/a63433] Submitted process > pipeline:preprocess:call_adapter_scan (184)
+[c0/be356b] Submitted process > pipeline:preprocess:call_adapter_scan (181)
+[1f/81cfb3] Submitted process > pipeline:preprocess:call_adapter_scan (186)
+[d9/c5700e] Submitted process > pipeline:preprocess:call_adapter_scan (185)
+[f4/55be6b] Submitted process > pipeline:preprocess:call_adapter_scan (190)
+[1a/1754a2] Submitted process > pipeline:preprocess:call_adapter_scan (187)
+[46/cfeeea] Submitted process > pipeline:preprocess:call_adapter_scan (188)
+[70/4ac7e6] Submitted process > pipeline:preprocess:call_adapter_scan (189)
+[70/456773] Submitted process > pipeline:preprocess:call_adapter_scan (192)
+[8d/6748c1] Submitted process > pipeline:preprocess:call_adapter_scan (193)
+[a4/b03373] Submitted process > pipeline:preprocess:call_adapter_scan (194)
+[5e/cda0c9] Submitted process > pipeline:preprocess:call_adapter_scan (195)
+[eb/6597d3] Submitted process > pipeline:preprocess:call_adapter_scan (196)
+[55/d18c0f] Submitted process > pipeline:preprocess:call_adapter_scan (197)
+[5f/fbda68] Submitted process > pipeline:preprocess:call_adapter_scan (198)
+[3f/f2951d] Submitted process > pipeline:preprocess:call_adapter_scan (199)
+[43/ff695a] Submitted process > pipeline:preprocess:call_adapter_scan (201)
+[01/9752fe] Submitted process > pipeline:preprocess:call_adapter_scan (202)
+[6c/1c5b55] Submitted process > pipeline:preprocess:call_adapter_scan (203)
+[ae/07fa0e] Submitted process > pipeline:preprocess:call_adapter_scan (204)
+[73/6ab671] Submitted process > pipeline:preprocess:call_adapter_scan (206)
+[56/9d1778] Submitted process > pipeline:preprocess:call_adapter_scan (205)
+[3c/55eff4] Submitted process > pipeline:preprocess:call_adapter_scan (207)
+[55/a62ee8] Submitted process > pipeline:preprocess:call_adapter_scan (208)
+[3f/159089] Submitted process > pipeline:preprocess:call_adapter_scan (210)
+[d3/2f6338] Submitted process > pipeline:preprocess:call_adapter_scan (209)
+[39/980be0] Submitted process > pipeline:preprocess:call_adapter_scan (211)
+[e9/008e19] Submitted process > pipeline:preprocess:call_adapter_scan (212)
+[1a/61bade] Submitted process > pipeline:preprocess:call_adapter_scan (213)
+[85/8a625c] Submitted process > pipeline:preprocess:call_adapter_scan (214)
+[f8/30f6ac] Submitted process > pipeline:preprocess:call_adapter_scan (215)
+[93/a6efd3] Submitted process > pipeline:preprocess:call_adapter_scan (216)
+[69/a4fedc] Submitted process > pipeline:preprocess:call_adapter_scan (242)
+[9f/b52be0] Submitted process > pipeline:preprocess:call_adapter_scan (217)
+[1f/9db36e] Submitted process > pipeline:preprocess:call_adapter_scan (218)
+[63/9ef61f] Submitted process > pipeline:preprocess:call_adapter_scan (219)
+[8b/c823ef] Submitted process > pipeline:preprocess:call_adapter_scan (220)
+[0d/2d0ee1] Submitted process > pipeline:preprocess:call_adapter_scan (221)
+[af/b243de] Submitted process > pipeline:preprocess:call_adapter_scan (222)
+[63/4f999e] Submitted process > pipeline:preprocess:call_adapter_scan (223)
+[9d/e16c6d] Submitted process > pipeline:preprocess:call_adapter_scan (225)
+[0b/fd291f] Submitted process > pipeline:preprocess:call_adapter_scan (224)
+[dd/06c57e] Submitted process > pipeline:preprocess:call_adapter_scan (226)
+[b5/7307db] Submitted process > pipeline:preprocess:call_adapter_scan (227)
+[a4/814779] Submitted process > pipeline:preprocess:call_adapter_scan (228)
+[9f/f39236] Submitted process > pipeline:preprocess:call_adapter_scan (229)
+[08/5dcef9] Submitted process > pipeline:preprocess:call_adapter_scan (230)
+[dc/6086aa] Submitted process > pipeline:preprocess:call_adapter_scan (231)
+[cd/a416ff] Submitted process > pipeline:preprocess:call_adapter_scan (232)
+[00/91b1f2] Submitted process > pipeline:preprocess:call_adapter_scan (233)
+[97/f31adc] Submitted process > pipeline:preprocess:call_adapter_scan (234)
+[2b/52b63b] Submitted process > pipeline:preprocess:call_adapter_scan (236)
+[98/10a871] Submitted process > pipeline:preprocess:call_adapter_scan (235)
+[48/317edb] Submitted process > pipeline:preprocess:call_adapter_scan (239)
+[73/787a56] Submitted process > pipeline:preprocess:call_adapter_scan (238)
+[31/4de6ec] Submitted process > pipeline:preprocess:call_adapter_scan (240)
+[1a/c185ec] Submitted process > pipeline:preprocess:call_adapter_scan (241)
+[88/61048f] Submitted process > pipeline:preprocess:call_adapter_scan (237)
+[07/e07095] Submitted process > pipeline:preprocess:call_adapter_scan (243)
+[7e/766914] Submitted process > pipeline:preprocess:call_adapter_scan (244)
+[d9/b3a55c] Submitted process > pipeline:preprocess:call_adapter_scan (245)
+[68/ea9bcc] Submitted process > pipeline:preprocess:call_adapter_scan (246)
+[b1/e1f734] Submitted process > pipeline:preprocess:call_adapter_scan (247)
+[0a/f7a647] Submitted process > pipeline:preprocess:call_adapter_scan (248)
+[66/76a5a8] Submitted process > pipeline:preprocess:summarize_adapter_table (1)
+[b8/2ef2a1] Submitted process > pipeline:process_bams:generate_whitelist (1)
+[bd/6d6ff9] Submitted process > pipeline:process_bams:merge_bams (1)
+[56/099cd5] Submitted process > pipeline:process_bams:assign_barcodes (10)
+[79/cf35fa] Submitted process > pipeline:process_bams:assign_barcodes (17)
+[45/06075a] Submitted process > pipeline:process_bams:assign_barcodes (27)
+[ba/a90ec9] Submitted process > pipeline:process_bams:assign_barcodes (25)
+[a1/075a94] Submitted process > pipeline:process_bams:assign_barcodes (2)
+[7e/1475d3] Submitted process > pipeline:process_bams:assign_barcodes (30)
+[93/71bea5] Submitted process > pipeline:process_bams:assign_barcodes (33)
+[58/c17c58] Submitted process > pipeline:process_bams:assign_barcodes (9)
+[23/d73463] Submitted process > pipeline:process_bams:assign_barcodes (3)
+[a6/adea60] Submitted process > pipeline:process_bams:assign_barcodes (19)
+[ba/7eecee] Submitted process > pipeline:process_bams:assign_barcodes (20)
+[3f/8d4472] Submitted process > pipeline:process_bams:assign_barcodes (18)
+[57/c7f792] Submitted process > pipeline:process_bams:assign_barcodes (32)
+[2c/0950ab] Submitted process > pipeline:process_bams:assign_barcodes (24)
+[16/95e04f] Submitted process > pipeline:process_bams:assign_barcodes (7)
+[79/8c2b69] Submitted process > pipeline:process_bams:assign_barcodes (23)
+[73/c68cbf] Submitted process > pipeline:process_bams:assign_barcodes (8)
+[79/852920] Submitted process > pipeline:process_bams:assign_barcodes (21)
+[11/1bc27f] Submitted process > pipeline:process_bams:assign_barcodes (11)
+[34/2c9cad] Submitted process > pipeline:process_bams:assign_barcodes (31)
+[c0/3635f5] Submitted process > pipeline:process_bams:assign_barcodes (26)
+[cc/402682] Submitted process > pipeline:process_bams:assign_barcodes (13)
+[14/966dc0] Submitted process > pipeline:process_bams:assign_barcodes (15)
+[bb/0e2876] Submitted process > pipeline:process_bams:assign_barcodes (6)
+[9b/fb7237] Submitted process > pipeline:process_bams:assign_barcodes (5)
+[da/4023e0] Submitted process > pipeline:process_bams:assign_barcodes (12)
+[f1/6e41aa] Submitted process > pipeline:process_bams:assign_barcodes (28)
+[a2/a76991] Submitted process > pipeline:process_bams:assign_barcodes (16)
+[f3/f3de7c] Submitted process > pipeline:process_bams:assign_barcodes (1)
+[26/967a72] Submitted process > pipeline:process_bams:assign_barcodes (4)
+[0c/57a32a] Submitted process > pipeline:process_bams:assign_barcodes (29)
+[42/3d4803] Submitted process > pipeline:process_bams:assign_barcodes (14)
+[e6/c75d3e] Submitted process > pipeline:process_bams:assign_barcodes (22)
+[a8/fae16f] Submitted process > pipeline:process_bams:assign_barcodes (34)
+[aa/61af48] Submitted process > pipeline:process_bams:assign_barcodes (36)
+[51/2915c1] Submitted process > pipeline:process_bams:assign_barcodes (35)
+[10/0fe5ef] Submitted process > pipeline:process_bams:assign_barcodes (37)
+[fc/3c05e9] Submitted process > pipeline:process_bams:assign_barcodes (38)
+[67/7913b7] Submitted process > pipeline:process_bams:assign_barcodes (39)
+[57/411056] Submitted process > pipeline:process_bams:assign_barcodes (40)
+[dd/420562] Submitted process > pipeline:process_bams:assign_barcodes (41)
+[e6/0fda6c] Submitted process > pipeline:process_bams:assign_barcodes (42)
+[8c/398ea4] Submitted process > pipeline:process_bams:assign_barcodes (43)
+[1a/65b138] Submitted process > pipeline:process_bams:assign_barcodes (44)
+[38/e8fda0] Submitted process > pipeline:process_bams:assign_barcodes (45)
+[8c/e9110d] Submitted process > pipeline:process_bams:assign_barcodes (47)
+[e7/8e1490] Submitted process > pipeline:process_bams:assign_barcodes (46)
+[51/b81636] Submitted process > pipeline:process_bams:assign_barcodes (49)
+[19/2a67b8] Submitted process > pipeline:process_bams:assign_barcodes (48)
+[3d/e5b68f] Submitted process > pipeline:process_bams:assign_barcodes (50)
+[22/898485] Submitted process > pipeline:process_bams:assign_barcodes (52)
+[41/1ff0b7] Submitted process > pipeline:process_bams:assign_barcodes (53)
+[a3/f1ba4f] Submitted process > pipeline:process_bams:assign_barcodes (54)
+[8f/cf0286] Submitted process > pipeline:process_bams:assign_barcodes (56)
+[b3/687a40] Submitted process > pipeline:process_bams:assign_barcodes (57)
+[d7/7cccb8] Submitted process > pipeline:process_bams:assign_barcodes (58)
+[00/5b369c] Submitted process > pipeline:process_bams:assign_barcodes (59)
+[b8/b1b1ee] Submitted process > pipeline:process_bams:assign_barcodes (60)
+[19/6448fc] Submitted process > pipeline:process_bams:assign_barcodes (61)
+[1d/9f7843] Submitted process > pipeline:process_bams:assign_barcodes (62)
+[e2/df88cb] Submitted process > pipeline:process_bams:assign_barcodes (63)
+[86/9f815e] Submitted process > pipeline:process_bams:assign_barcodes (64)
+[00/2400c2] Submitted process > pipeline:process_bams:assign_barcodes (65)
+[a8/48d5e8] Submitted process > pipeline:process_bams:assign_barcodes (51)
+[68/f37407] Submitted process > pipeline:process_bams:assign_barcodes (66)
+[0e/77e7c8] Submitted process > pipeline:process_bams:assign_barcodes (67)
+[05/d22e24] Submitted process > pipeline:process_bams:assign_barcodes (68)
+[67/a75cdf] Submitted process > pipeline:process_bams:assign_barcodes (69)
+[20/f59306] Submitted process > pipeline:process_bams:assign_barcodes (70)
+[97/cbf814] Submitted process > pipeline:process_bams:assign_barcodes (71)
+[7b/65bba4] Submitted process > pipeline:process_bams:assign_barcodes (55)
+[bd/86b8af] Submitted process > pipeline:process_bams:assign_barcodes (72)
+[b9/f53bd2] Submitted process > pipeline:process_bams:assign_barcodes (73)
+[7a/bb6eed] Submitted process > pipeline:process_bams:assign_barcodes (74)
+[06/db59ed] Submitted process > pipeline:process_bams:assign_barcodes (75)
+[e2/154d9c] Submitted process > pipeline:process_bams:assign_barcodes (76)
+[0c/19ba29] Submitted process > pipeline:process_bams:assign_barcodes (77)
+[e0/fd509b] Submitted process > pipeline:process_bams:assign_barcodes (78)
+[ba/a88e71] Submitted process > pipeline:process_bams:assign_barcodes (79)
+[df/838113] Submitted process > pipeline:process_bams:assign_barcodes (80)
+[7c/28c6a9] Submitted process > pipeline:process_bams:assign_barcodes (82)
+[3a/ee656d] Submitted process > pipeline:process_bams:assign_barcodes (83)
+[91/1ff43c] Submitted process > pipeline:process_bams:assign_barcodes (85)
+[80/94743c] Submitted process > pipeline:process_bams:assign_barcodes (86)
+[86/84a68c] Submitted process > pipeline:process_bams:assign_barcodes (88)
+[9d/4e99da] Submitted process > pipeline:process_bams:assign_barcodes (87)
+[a7/9025cf] Submitted process > pipeline:process_bams:assign_barcodes (114)
+[18/83c597] Submitted process > pipeline:process_bams:assign_barcodes (89)
+[46/63246b] Submitted process > pipeline:process_bams:assign_barcodes (90)
+[85/53ca47] Submitted process > pipeline:process_bams:assign_barcodes (91)
+[9b/00c73c] Submitted process > pipeline:process_bams:assign_barcodes (93)
+[80/51df15] Submitted process > pipeline:process_bams:assign_barcodes (94)
+[bc/034275] Submitted process > pipeline:process_bams:assign_barcodes (92)
+[cb/e18d12] Submitted process > pipeline:process_bams:assign_barcodes (95)
+[de/218d5d] Submitted process > pipeline:process_bams:assign_barcodes (97)
+[cc/4a5a7f] Submitted process > pipeline:process_bams:assign_barcodes (96)
+[ff/946442] Submitted process > pipeline:process_bams:assign_barcodes (123)
+[a9/0c9025] Submitted process > pipeline:process_bams:assign_barcodes (98)
+[ef/54ae07] Submitted process > pipeline:process_bams:assign_barcodes (99)
+[a8/fff1c1] Submitted process > pipeline:process_bams:assign_barcodes (100)
+[c3/395c6a] Submitted process > pipeline:process_bams:assign_barcodes (101)
+[21/3cfbbc] Submitted process > pipeline:process_bams:assign_barcodes (81)
+[c7/49f515] Submitted process > pipeline:process_bams:assign_barcodes (102)
+[60/27a814] Submitted process > pipeline:process_bams:assign_barcodes (103)
+[7d/371905] Submitted process > pipeline:process_bams:assign_barcodes (104)
+[91/273fcc] Submitted process > pipeline:process_bams:assign_barcodes (84)
+[37/8bd170] Submitted process > pipeline:process_bams:assign_barcodes (105)
+[91/07fb57] Submitted process > pipeline:process_bams:assign_barcodes (106)
+[00/372735] Submitted process > pipeline:process_bams:assign_barcodes (109)
+[3a/387875] Submitted process > pipeline:process_bams:assign_barcodes (108)
+[de/2a7b82] Submitted process > pipeline:process_bams:assign_barcodes (110)
+[1d/619fd5] Submitted process > pipeline:process_bams:assign_barcodes (111)
+[ad/656070] Submitted process > pipeline:process_bams:assign_barcodes (112)
+[13/549710] Submitted process > pipeline:process_bams:assign_barcodes (113)
+[c8/f1d301] Submitted process > pipeline:process_bams:assign_barcodes (115)
+[fb/7b79f2] Submitted process > pipeline:process_bams:assign_barcodes (116)
+[a2/afbcb7] Submitted process > pipeline:process_bams:assign_barcodes (117)
+[e7/8dd536] Submitted process > pipeline:process_bams:assign_barcodes (118)
+[d6/cf3b99] Submitted process > pipeline:process_bams:assign_barcodes (119)
+[6e/76b079] Submitted process > pipeline:process_bams:assign_barcodes (120)
+[bd/efd707] Submitted process > pipeline:process_bams:assign_barcodes (121)
+[90/5b93ba] Submitted process > pipeline:process_bams:assign_barcodes (122)
+[42/af0617] Submitted process > pipeline:process_bams:assign_barcodes (107)
+[58/cde50b] Submitted process > pipeline:process_bams:assign_barcodes (124)
+[d2/66508d] Submitted process > pipeline:process_bams:assign_barcodes (125)
+[a3/fd553f] Submitted process > pipeline:process_bams:assign_barcodes (127)
+[9e/01a5aa] Submitted process > pipeline:process_bams:assign_barcodes (126)
+[68/936a43] Submitted process > pipeline:process_bams:assign_barcodes (128)
+[b4/4a8309] Submitted process > pipeline:process_bams:assign_barcodes (130)
+[69/7df720] Submitted process > pipeline:process_bams:assign_barcodes (129)
+[6e/d7e68d] Submitted process > pipeline:process_bams:assign_barcodes (131)
+[60/670631] Submitted process > pipeline:process_bams:assign_barcodes (132)
+[3b/c4ed00] Submitted process > pipeline:process_bams:assign_barcodes (133)
+[09/77f79e] Submitted process > pipeline:process_bams:assign_barcodes (135)
+[85/6295bc] Submitted process > pipeline:process_bams:assign_barcodes (136)
+[79/dd4633] Submitted process > pipeline:process_bams:assign_barcodes (137)
+[a2/c09f81] Submitted process > pipeline:process_bams:assign_barcodes (138)
+[63/ed2e91] Submitted process > pipeline:process_bams:assign_barcodes (139)
+[d0/ad5bb7] Submitted process > pipeline:process_bams:assign_barcodes (140)
+[e9/73eb3a] Submitted process > pipeline:process_bams:assign_barcodes (142)
+[b1/4a97cb] Submitted process > pipeline:process_bams:assign_barcodes (143)
+[d3/e4bef6] Submitted process > pipeline:process_bams:assign_barcodes (144)
+[3e/9edd35] Submitted process > pipeline:process_bams:assign_barcodes (146)
+[96/d346dd] Submitted process > pipeline:process_bams:assign_barcodes (147)
+[d2/0da435] Submitted process > pipeline:process_bams:assign_barcodes (148)
+[7e/c2c0d6] Submitted process > pipeline:process_bams:assign_barcodes (149)
+[9d/f95f44] Submitted process > pipeline:process_bams:assign_barcodes (150)
+[cb/802c5c] Submitted process > pipeline:process_bams:assign_barcodes (151)
+[00/f7c866] Submitted process > pipeline:process_bams:assign_barcodes (134)
+[09/47046e] Submitted process > pipeline:process_bams:assign_barcodes (152)
+[39/cdc0b3] Submitted process > pipeline:process_bams:assign_barcodes (155)
+[53/dba218] Submitted process > pipeline:process_bams:assign_barcodes (158)
+[60/703ea1] Submitted process > pipeline:process_bams:assign_barcodes (157)
+[0b/0d95ba] Submitted process > pipeline:process_bams:assign_barcodes (159)
+[dd/8fe59f] Submitted process > pipeline:process_bams:assign_barcodes (160)
+[93/bb2bee] Submitted process > pipeline:process_bams:assign_barcodes (161)
+[f9/18a9c8] Submitted process > pipeline:process_bams:assign_barcodes (141)
+[4c/3dbd94] Submitted process > pipeline:process_bams:assign_barcodes (145)
+[4c/d1a622] Submitted process > pipeline:process_bams:assign_barcodes (153)
+[4f/60a27c] Submitted process > pipeline:process_bams:assign_barcodes (162)
+[4c/5e1032] Submitted process > pipeline:process_bams:assign_barcodes (163)
+[8a/8f9cba] Submitted process > pipeline:process_bams:assign_barcodes (164)
+[fb/481a64] Submitted process > pipeline:process_bams:assign_barcodes (166)
+[f3/0abeab] Submitted process > pipeline:process_bams:assign_barcodes (168)
+[39/bde7e2] Submitted process > pipeline:process_bams:assign_barcodes (167)
+[67/74df51] Submitted process > pipeline:process_bams:assign_barcodes (169)
+[84/02c2e6] Submitted process > pipeline:process_bams:assign_barcodes (154)
+[45/90815a] Submitted process > pipeline:process_bams:assign_barcodes (171)
+[25/082620] Submitted process > pipeline:process_bams:assign_barcodes (156)
+[c5/32e5f8] Submitted process > pipeline:process_bams:assign_barcodes (170)
+[35/69dc54] Submitted process > pipeline:process_bams:assign_barcodes (165)
+[3b/874edb] Submitted process > pipeline:process_bams:assign_barcodes (172)
+[07/443ffc] Submitted process > pipeline:process_bams:assign_barcodes (173)
+[1b/f00c95] Submitted process > pipeline:process_bams:assign_barcodes (174)
+[fa/e86c04] Submitted process > pipeline:process_bams:assign_barcodes (175)
+[ba/d2763c] Submitted process > pipeline:process_bams:assign_barcodes (176)
+[1f/f99b83] Submitted process > pipeline:process_bams:assign_barcodes (177)
+[ba/ffcb87] Submitted process > pipeline:process_bams:assign_barcodes (178)
+[e0/41dc63] Submitted process > pipeline:process_bams:assign_barcodes (180)
+[88/9a7e8d] Submitted process > pipeline:process_bams:assign_barcodes (181)
+[90/5f6d4b] Submitted process > pipeline:process_bams:assign_barcodes (182)
+[2a/099ca1] Submitted process > pipeline:process_bams:assign_barcodes (183)
+[0a/abc064] Submitted process > pipeline:process_bams:assign_barcodes (184)
+[8c/649231] Submitted process > pipeline:process_bams:assign_barcodes (185)
+[0c/66729f] Submitted process > pipeline:process_bams:assign_barcodes (186)
+[67/c3f151] Submitted process > pipeline:process_bams:assign_barcodes (188)
+[3e/80eecf] Submitted process > pipeline:process_bams:assign_barcodes (187)
+[cf/06af13] Submitted process > pipeline:process_bams:assign_barcodes (214)
+[77/d153a3] Submitted process > pipeline:process_bams:assign_barcodes (189)
+[98/e7f7bf] Submitted process > pipeline:process_bams:assign_barcodes (191)
+[ea/b055b0] Submitted process > pipeline:process_bams:assign_barcodes (192)
+[a6/33de3f] Submitted process > pipeline:process_bams:assign_barcodes (193)
+[2c/f33b86] Submitted process > pipeline:process_bams:assign_barcodes (194)
+[0f/ba9af4] Submitted process > pipeline:process_bams:assign_barcodes (196)
+[79/d316b2] Submitted process > pipeline:process_bams:assign_barcodes (197)
+[7f/5ee9d0] Submitted process > pipeline:process_bams:assign_barcodes (179)
+[02/e57eec] Submitted process > pipeline:process_bams:assign_barcodes (195)
+[6b/b15783] Submitted process > pipeline:process_bams:assign_barcodes (190)
+[d2/d5671b] Submitted process > pipeline:process_bams:assign_barcodes (198)
+[58/419334] Submitted process > pipeline:process_bams:assign_barcodes (199)
+[96/98ee54] Submitted process > pipeline:process_bams:assign_barcodes (200)
+[43/5ed8ec] Submitted process > pipeline:process_bams:assign_barcodes (202)
+[44/0c5103] Submitted process > pipeline:process_bams:assign_barcodes (201)
+[7e/0ec0d9] Submitted process > pipeline:process_bams:assign_barcodes (203)
+[3d/44f0ab] Submitted process > pipeline:process_bams:assign_barcodes (204)
+[04/5d3ae8] Submitted process > pipeline:process_bams:assign_barcodes (205)
+[35/8f9a61] Submitted process > pipeline:process_bams:assign_barcodes (206)
+[04/e38273] Submitted process > pipeline:process_bams:assign_barcodes (207)
+[3a/6ca176] Submitted process > pipeline:process_bams:assign_barcodes (208)
+[bd/0d817e] Submitted process > pipeline:process_bams:assign_barcodes (209)
+[f2/737c6f] Submitted process > pipeline:process_bams:assign_barcodes (210)
+[e3/3bc7f9] Submitted process > pipeline:process_bams:assign_barcodes (211)
+[10/0622c7] Submitted process > pipeline:process_bams:assign_barcodes (212)
+[51/6d7545] Submitted process > pipeline:process_bams:assign_barcodes (213)
+[17/056dcd] Submitted process > pipeline:process_bams:assign_barcodes (215)
+[e4/ca17f3] Submitted process > pipeline:process_bams:assign_barcodes (216)
+[1f/5f8681] Submitted process > pipeline:process_bams:assign_barcodes (217)
+[11/0ddbdc] Submitted process > pipeline:process_bams:assign_barcodes (218)
+[7b/c802a2] Submitted process > pipeline:process_bams:assign_barcodes (219)
+[ae/291424] Submitted process > pipeline:process_bams:assign_barcodes (221)
+[f5/1221a5] Submitted process > pipeline:process_bams:assign_barcodes (220)
+[6b/91772c] Submitted process > pipeline:process_bams:assign_barcodes (222)
+[39/79e869] Submitted process > pipeline:process_bams:assign_barcodes (223)
+[47/a2aae6] Submitted process > pipeline:process_bams:assign_barcodes (224)
+[bd/3ccb96] Submitted process > pipeline:process_bams:assign_barcodes (225)
+[09/666047] Submitted process > pipeline:process_bams:assign_barcodes (226)
+[81/c93684] Submitted process > pipeline:process_bams:assign_barcodes (227)
+[05/93f7e7] Submitted process > pipeline:process_bams:assign_barcodes (228)
+[61/098d97] Submitted process > pipeline:process_bams:assign_barcodes (229)
+[e3/5072e4] Submitted process > pipeline:process_bams:assign_barcodes (230)
+[5c/e12a4c] Submitted process > pipeline:process_bams:assign_barcodes (231)
+[66/aa57e6] Submitted process > pipeline:process_bams:assign_barcodes (232)
+[af/1c2217] Submitted process > pipeline:process_bams:assign_barcodes (233)
+[7d/b15dea] Submitted process > pipeline:process_bams:assign_barcodes (234)
+[b8/7e2a37] Submitted process > pipeline:process_bams:assign_barcodes (235)
+[5b/ed512a] Submitted process > pipeline:process_bams:assign_barcodes (236)
+[df/a6f0f0] Submitted process > pipeline:process_bams:assign_barcodes (237)
+[d8/85b9a1] Submitted process > pipeline:process_bams:assign_barcodes (238)
+[7a/248175] Submitted process > pipeline:process_bams:assign_barcodes (239)
+[e7/50f925] Submitted process > pipeline:process_bams:assign_barcodes (240)
+[c4/e8e88b] Submitted process > pipeline:process_bams:assign_barcodes (241)
+[f1/ece81f] Submitted process > pipeline:process_bams:assign_barcodes (242)
+[a5/0a3be4] Submitted process > pipeline:process_bams:assign_barcodes (243)
+[f7/0dc9ea] Submitted process > pipeline:process_bams:assign_barcodes (244)
+[ef/3fc304] Submitted process > pipeline:process_bams:assign_barcodes (245)
+[a6/27343c] Submitted process > pipeline:process_bams:assign_barcodes (246)
+[ee/71443b] Submitted process > pipeline:process_bams:assign_barcodes (247)
+[7e/ba16f1] Submitted process > pipeline:process_bams:assign_barcodes (248)
+[42/e0dc30] Submitted process > pipeline:process_bams:stringtie (20)
+[dc/779ea9] Submitted process > pipeline:process_bams:stringtie (23)
+[56/5f895c] Submitted process > pipeline:process_bams:stringtie (2)
+[b4/a9137a] Submitted process > pipeline:process_bams:stringtie (10)
+[41/baf893] Submitted process > pipeline:process_bams:stringtie (17)
+[53/06477a] Submitted process > pipeline:process_bams:stringtie (30)
+[85/4d071f] Submitted process > pipeline:process_bams:stringtie (12)
+[46/070f93] Submitted process > pipeline:process_bams:stringtie (32)
+[a2/fcf0a5] Submitted process > pipeline:process_bams:stringtie (24)
+[5c/208f18] Submitted process > pipeline:process_bams:stringtie (9)
+[60/48e7cc] Submitted process > pipeline:process_bams:stringtie (8)
+[ef/5d752a] Submitted process > pipeline:process_bams:stringtie (7)
+[9e/605f4e] Submitted process > pipeline:process_bams:stringtie (22)
+[d0/025654] Submitted process > pipeline:process_bams:stringtie (18)
+[00/efae10] Submitted process > pipeline:process_bams:stringtie (6)
+[75/9c1a34] Submitted process > pipeline:process_bams:stringtie (36)
+[fe/bdbd17] Submitted process > pipeline:process_bams:stringtie (19)
+[e4/973976] Submitted process > pipeline:process_bams:stringtie (31)
+[d8/c287b6] Submitted process > pipeline:process_bams:stringtie (1)
+[1e/e4e892] Submitted process > pipeline:process_bams:stringtie (13)
+[2f/71d8aa] Submitted process > pipeline:process_bams:stringtie (29)
+[0c/38eb9e] Submitted process > pipeline:process_bams:stringtie (4)
+[a3/da5061] Submitted process > pipeline:process_bams:stringtie (26)
+[ca/da9237] Submitted process > pipeline:process_bams:stringtie (14)
+[11/1a4a2f] Submitted process > pipeline:process_bams:stringtie (28)
+[13/469877] Submitted process > pipeline:process_bams:stringtie (25)
+[51/25e261] Submitted process > pipeline:process_bams:stringtie (21)
+[48/09e60c] Submitted process > pipeline:process_bams:stringtie (5)
+[7f/b8012f] Submitted process > pipeline:process_bams:stringtie (11)
+[6b/c349c1] Submitted process > pipeline:process_bams:stringtie (3)
+[ff/580492] Submitted process > pipeline:process_bams:stringtie (16)
+[5a/af94f2] Submitted process > pipeline:process_bams:stringtie (27)
+[78/6e955a] Submitted process > pipeline:process_bams:stringtie (15)
+[11/365dbb] Submitted process > pipeline:process_bams:stringtie (35)
+[ab/0dcc07] Submitted process > pipeline:process_bams:stringtie (33)
+[44/a7442e] Submitted process > pipeline:process_bams:stringtie (37)
+[75/a0171a] Submitted process > pipeline:process_bams:stringtie (39)
+[81/19a579] Submitted process > pipeline:process_bams:stringtie (34)
+[85/fdbe4e] Submitted process > pipeline:process_bams:stringtie (38)
+[21/e2044c] Submitted process > pipeline:process_bams:merge_and_publish_tsv (1)
+[8b/732669] Submitted process > pipeline:process_bams:cat_tags_by_chrom (1)
+[18/a95bf2] Submitted process > pipeline:process_bams:align_to_transcriptome (1)
+[4a/a98bcc] Submitted process > pipeline:process_bams:align_to_transcriptome (2)
+[53/c1a351] Submitted process > pipeline:process_bams:align_to_transcriptome (3)
+[21/11dd2d] Submitted process > pipeline:process_bams:align_to_transcriptome (4)
+[f7/faf2f5] Submitted process > pipeline:process_bams:align_to_transcriptome (5)
+[5f/c070d1] Submitted process > pipeline:process_bams:align_to_transcriptome (6)
+[62/7ccbda] Submitted process > pipeline:process_bams:align_to_transcriptome (7)
+[fd/c3ed14] Submitted process > pipeline:process_bams:align_to_transcriptome (8)
+[76/9acc4f] Submitted process > pipeline:process_bams:align_to_transcriptome (9)
+[12/69f012] Submitted process > pipeline:process_bams:align_to_transcriptome (10)
+[80/93c752] Submitted process > pipeline:process_bams:align_to_transcriptome (11)
+[03/8bcb18] Submitted process > pipeline:process_bams:align_to_transcriptome (12)
+[38/aa3554] Submitted process > pipeline:process_bams:align_to_transcriptome (13)
+[3d/2a3097] Submitted process > pipeline:process_bams:align_to_transcriptome (14)
+[9b/e80bff] Submitted process > pipeline:process_bams:align_to_transcriptome (15)
+[c6/992cf9] Submitted process > pipeline:process_bams:align_to_transcriptome (16)
+[2a/bf679e] Submitted process > pipeline:process_bams:align_to_transcriptome (17)
+[34/81ca1a] Submitted process > pipeline:process_bams:align_to_transcriptome (18)
+[97/a64ccf] Submitted process > pipeline:process_bams:align_to_transcriptome (19)
+[1b/9abbaa] Submitted process > pipeline:process_bams:align_to_transcriptome (20)
+[b5/63fccb] Submitted process > pipeline:process_bams:align_to_transcriptome (21)
+[7c/23dfcd] Submitted process > pipeline:process_bams:align_to_transcriptome (22)
+[4b/a7a5d3] Submitted process > pipeline:process_bams:align_to_transcriptome (23)
+[d4/f9eec9] Submitted process > pipeline:process_bams:align_to_transcriptome (24)
+[00/f4cc89] Submitted process > pipeline:process_bams:align_to_transcriptome (25)
+[53/c7e0be] Submitted process > pipeline:process_bams:align_to_transcriptome (26)
+[0c/b851e0] Submitted process > pipeline:process_bams:align_to_transcriptome (27)
+[c8/94034b] Submitted process > pipeline:process_bams:align_to_transcriptome (28)
+[9c/a92ff6] Submitted process > pipeline:process_bams:align_to_transcriptome (29)
+[92/d94020] Submitted process > pipeline:process_bams:align_to_transcriptome (30)
+[f5/df5812] Submitted process > pipeline:process_bams:align_to_transcriptome (31)
+[0a/9fd5df] Submitted process > pipeline:process_bams:align_to_transcriptome (32)
+[e5/90abc0] Submitted process > pipeline:process_bams:align_to_transcriptome (33)
+[88/db7bd3] Submitted process > pipeline:process_bams:align_to_transcriptome (34)
+[db/30c837] Submitted process > pipeline:process_bams:align_to_transcriptome (35)
+[e0/36b8e7] Submitted process > pipeline:process_bams:align_to_transcriptome (36)
+[78/a064fe] Submitted process > pipeline:process_bams:align_to_transcriptome (37)
+[72/400869] Submitted process > pipeline:process_bams:align_to_transcriptome (38)
+[09/62b85f] Submitted process > pipeline:process_bams:align_to_transcriptome (39)
+[bf/8109e2] Submitted process > pipeline:process_bams:assign_features (1)
+[b7/8a016f] Submitted process > pipeline:process_bams:assign_features (2)
+[47/7974e7] Submitted process > pipeline:process_bams:assign_features (3)
+[82/304b2c] Submitted process > pipeline:process_bams:assign_features (4)
+[3a/e6bdbb] Submitted process > pipeline:process_bams:assign_features (5)
+[70/b48008] Submitted process > pipeline:process_bams:assign_features (6)
+[15/122a5b] Submitted process > pipeline:process_bams:assign_features (7)
+[07/003022] Submitted process > pipeline:process_bams:assign_features (8)
+[85/3a7c71] Submitted process > pipeline:process_bams:assign_features (9)
+[c5/345262] Submitted process > pipeline:process_bams:assign_features (10)
+[3f/6b6450] Submitted process > pipeline:process_bams:assign_features (11)
+[e2/3ae7e3] Submitted process > pipeline:process_bams:assign_features (12)
+[b1/ee241e] Submitted process > pipeline:process_bams:assign_features (13)
+[7a/15d592] Submitted process > pipeline:process_bams:assign_features (14)
+[bd/74662c] Submitted process > pipeline:process_bams:assign_features (15)
+[0b/0f821a] Submitted process > pipeline:process_bams:assign_features (16)
+[14/18c0e7] Submitted process > pipeline:process_bams:assign_features (17)
+[f2/0dd73b] Submitted process > pipeline:process_bams:assign_features (18)
+[b1/e94afd] Submitted process > pipeline:process_bams:assign_features (19)
+[fe/111e05] Submitted process > pipeline:process_bams:assign_features (20)
+[90/f03a6f] Submitted process > pipeline:process_bams:assign_features (21)
+[3c/7eb39d] Submitted process > pipeline:process_bams:assign_features (22)
+[b2/8309bb] Submitted process > pipeline:process_bams:assign_features (23)
+[e5/c8510f] Submitted process > pipeline:process_bams:assign_features (24)
+[a0/359b58] Submitted process > pipeline:process_bams:assign_features (25)
+[b8/1854b9] Submitted process > pipeline:process_bams:assign_features (26)
+[67/a805e0] Submitted process > pipeline:process_bams:assign_features (27)
+[87/68b96c] Submitted process > pipeline:process_bams:assign_features (28)
+[30/9f7e67] Submitted process > pipeline:process_bams:assign_features (29)
+[77/a25e04] Submitted process > pipeline:process_bams:assign_features (30)
+[b8/42809a] Submitted process > pipeline:process_bams:assign_features (31)
+[6f/ae2924] Submitted process > pipeline:process_bams:assign_features (32)
+[f6/3dbd47] Submitted process > pipeline:process_bams:assign_features (33)
+[59/7a38a4] Submitted process > pipeline:process_bams:assign_features (34)
+[ac/711e49] Submitted process > pipeline:process_bams:assign_features (35)
+[af/720ad2] Submitted process > pipeline:process_bams:assign_features (36)
+[54/fc4d69] Submitted process > pipeline:process_bams:assign_features (37)
+[f8/db65a9] Submitted process > pipeline:process_bams:assign_features (38)
+[5f/3257db] Submitted process > pipeline:process_bams:create_matrix (1)
+[04/3d2aee] Submitted process > pipeline:process_bams:create_matrix (2)
+[50/d6d13c] Submitted process > pipeline:process_bams:create_matrix (3)
+[29/7a71e3] Submitted process > pipeline:process_bams:create_matrix (4)
+[c7/63b15f] Submitted process > pipeline:process_bams:create_matrix (5)
+[58/bc98c5] Submitted process > pipeline:process_bams:create_matrix (6)
+[f4/c811fe] Submitted process > pipeline:process_bams:create_matrix (7)
+[fc/44dfa7] Submitted process > pipeline:process_bams:create_matrix (8)
+[bb/d06765] Submitted process > pipeline:process_bams:create_matrix (9)
+[3f/a92dc2] Submitted process > pipeline:process_bams:create_matrix (10)
+[fd/9dfe59] Submitted process > pipeline:process_bams:create_matrix (11)
+[f8/0e172e] Submitted process > pipeline:process_bams:create_matrix (12)
+[79/7b260f] Submitted process > pipeline:process_bams:create_matrix (13)
+[a6/f48f80] Submitted process > pipeline:process_bams:create_matrix (14)
+[12/985926] Submitted process > pipeline:process_bams:create_matrix (15)
+[a7/581304] Submitted process > pipeline:process_bams:create_matrix (16)
+[29/44c0fe] Submitted process > pipeline:process_bams:create_matrix (17)
+[35/6eba11] Submitted process > pipeline:process_bams:create_matrix (18)
+[f1/2a3978] Submitted process > pipeline:process_bams:create_matrix (19)
+[60/23e7bb] Submitted process > pipeline:process_bams:create_matrix (20)
+[a2/94d0a2] Submitted process > pipeline:process_bams:create_matrix (21)
+[f5/9d4b51] Submitted process > pipeline:process_bams:create_matrix (22)
+[87/ea6663] Submitted process > pipeline:process_bams:create_matrix (23)
+[24/65dca6] Submitted process > pipeline:process_bams:create_matrix (24)
+[d7/ba2206] Submitted process > pipeline:process_bams:create_matrix (25)
+[af/0ff759] Submitted process > pipeline:process_bams:create_matrix (26)
+[2f/6ea144] Submitted process > pipeline:process_bams:create_matrix (27)
+[81/bdbfc0] Submitted process > pipeline:process_bams:create_matrix (28)
+[55/ae4c98] Submitted process > pipeline:process_bams:create_matrix (29)
+[f7/2a9d64] Submitted process > pipeline:process_bams:create_matrix (30)
+[ae/a0c655] Submitted process > pipeline:process_bams:create_matrix (31)
+[d4/59b7fd] Submitted process > pipeline:process_bams:create_matrix (32)
+[6c/928dc4] Submitted process > pipeline:process_bams:create_matrix (33)
+[c3/36f7fd] Submitted process > pipeline:process_bams:create_matrix (34)
+[45/f23e61] Submitted process > pipeline:process_bams:create_matrix (35)
+[8e/d3056c] Submitted process > pipeline:process_bams:create_matrix (36)
+[59/377dea] Submitted process > pipeline:process_bams:create_matrix (37)
+[42/45476e] Submitted process > pipeline:process_bams:create_matrix (38)
+[75/9cb4cd] Submitted process > pipeline:process_bams:merge_transcriptome (1)
+[d3/561054] Submitted process > pipeline:process_bams:combine_final_tag_files (1)
+[07/4d98ae] Submitted process > pipeline:process_bams:tag_bam (1)
+[12/2fc29c] Submitted process > pipeline:process_bams:process_matrix (1)
+[e5/ce4307] Submitted process > pipeline:process_bams:process_matrix (2)
+[21/cfe275] Submitted process > pipeline:process_bams:umi_gene_saturation (1)
+[21/f87755] Submitted process > pipeline:process_bams:pack_images (1)
+[c0/b46e05] Submitted process > pipeline:prepare_report_data (1)
+[9c/02591a] Submitted process > pipeline:makeReport (1)
+Waiting for file transfers to complete (1 files)
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/67/dcddd0fb6b7a792800fd7ddef6ce4d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d4/a42575ffe1314e59e987dccfa5237f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9e/e5ffb9f69b41fa1c3aac3a58f2c622
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b4/c693cab8a81b98392ad63f90beb3c1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/41/bd44d1c126c64ee32be4c03b63264f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bf/bd5933abcba92d18687f08a2439f0e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c7/679e340e070c7cccb9c54899e8e839
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b9/637dcbe476cc70bc84fe58f1da6e05
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/67/14f92593b2a2fbc884d852743f0fb9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/21/63989ec61a7b6acaef65c1137bed62
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/68/f88e1f24649b7899f0cfc4686606c5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cd/cb848b1685945231051390f222ceb9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/aa/c8aced5eb8368fa5d529b0b8d0f4dd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6a/159c78b498b27fa5c0b098ebc7b82d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/97/1847f7331fa1444d1de943baa5e840
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/03/229670992d3eb0eb24b39f015c7193
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7a/0ebd5d222203d9933740386f2378b5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dc/bdb92066b2adcaf971261b6736b1eb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/17/d08cf9dbc332d8fd080ecb95a20828
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d2/e980b964a081f84174e6eca6cc248c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d9/518694da4284de35908d875e59bdcf
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fb/2e9a26ff8d63d7f95dd973d84308af
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/40/5c1ae9482804418724026abe45f7f9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9d/b2efa5172fd194623e9f5bb954dcbb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d8/a185ff54f2a42055a0bc67c20d69b0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/61/d3488e6bf5eed0791274a08b6ec3ae
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b1/179c7efe2dd8cc06c5d52d174379f4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/98/41b710941fc4fb14ca7108f4a9389c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cb/1d8ad8d02b27aa0bc7b908c92028c8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1b/473a9fda48c8b9c4e14e9de4bbc7ca
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ee/79a8e262d066562eb05153ffe110e6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9a/db4467939ccf8fd74eb7a1cab2a25e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ad/00f8966990996813b732ff3d3e99e3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/09/1b64b1215bd124e51fb5d557f5185b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/23/c0cfdb7540ec929547be68244ab4dc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ea/266332c5d3becd4f488f520638854e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/74/9dc65d371baa0b6813e716867768f9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e9/e750b24a5f44d47977141bfdf02e4a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/60/4e85dfc69c0e963b6b04555e0b554d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2a/b1dfedd5ad62be2792c3aeeb25f8e3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3d/5dee7c7387656cb84cb6943479102c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f2/3f8f03392001383a1b4db5efc18403
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/87/7464b4e8e565f1e34c4523c78b6fe1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3b/6e28d14912d1ab40bedf67d8d6c05c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9d/f9e62b53b65090682842cf23d7546a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fa/8f12c936451cdd6c5c60c4c54cbb02
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b8/e3f691cdacd6fb77ed4aad555d8977
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f8/1690478339ed1aae8497268d6b84de
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/04/220e0f246e089a04e995e5a3da5d60
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e3/371724e879c652655502e97dec51b1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0e/1cbe63b04b1e5aa58786472d04333d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/97/3eafdac0ecc4aff7d39ddfe60c99c2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/9def5c3b7f96f0b32ca7f725a11d35
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f9/c64f05e3a5258e9f944fe7114b8682
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/45/6a60809d534e3140c0abcd21b6ebd3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/59/d4650044ef88c5c86d9e46ad80214c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/16/9276a84c6f10415bfb84e0ceb62c08
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/18/6bd0a7e9001d629163098ee5403eca
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/38/0ce4173dd43d124e833502419d4613
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ee/9dc1e6221ff388a4f03e6201d43715
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/47/253187cb77c68053ec9d0103c10767
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ab/5374e9a955abc5d8dd25c26d98a16d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7d/524fa9873d8d0bb13c21eb98fc6032
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/10/be90b392b11650fef6b0b8dd8e4d15
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0e/9b8df432a063fc372eca046da75a62
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/60/8b60bb3977be6bb773a36269d9d3e3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/64/aba34d3a085867b7fca3b1cce07c72
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/55/f0ab3d95636fa6d410792c6bd23c36
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2d/15ad4ba42edf86e186d14b437353a5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/99/b2833eb44be64168d471f4c51d7bab
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e7/f99e94b5b3d34bbd1e561e41abc454
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/20/7f1637c7a18343d1b455b6cd3a0cf6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/e2c4bcd376f91b049b0e5eeda5480e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ea/c01f18a9490b151c1127591e5eb276
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/53/05595e9905e9f34b942a860d183f7a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5f/10f4b541ca03dddefc3fa68dc3d2da
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f7/4e891013068333d2ea04ec1380b214
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/27/04e4b971ad8bba0619a0d851e732f8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b3/5580fef362038c543184711a2f5669
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/61/55c5b7c39e5b5235798e30edc77d70
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/77/f15d01dc8885e6a2f47a5590da37ea
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e8/8bb60f4c5d31cf181a3ffa42d872f4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8b/72a52cb581cdb6cff38f40da571cec
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/91/6b1630e8fe8d378cbb39bbd03b6954
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6a/80e5c49f24424b78e98ca14c8d742a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b2/e36fc73648cd6dc6eb6c0ee880ff49
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3a/157f91f3236bb5573d3bc16276247b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/47/fdf1c98e56a94901dbaf68669559bc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/90/db0b5cda7d942f6b522a1873cc749c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3e/bde5761be62b9df57d82121f6a16fe
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e2/883fc73538cc57295c9cfd7b4285ec
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/81/d07f847d6d028c6980570bb82d28a9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/db/4ad5f14270455b99894f49d4abeb86
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/be/59880df3a60c4a5b12c2eea334a8eb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8a/a7e4fc578f1056b2f72ef88d5e78af
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5e/813cfd84e3e2a3331f86d7278f84de
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fc/8788e0201449c0a7663ac4854864c7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/05/8a0f8d729bf9a2d073ecc0dd4f1eb1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/95/6b38599649b2153475e0416eb489b7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/9ceb137b4213f0c39377da3b4f20b1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e4/87bc39efc9912a8d3aa3efc566398d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7d/aac5b40b8199fe1e3658030fa77033
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b0/93c4fef95a6e35ea495e910ef212fa
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f6/139056961613593798855475f98c16
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1a/fdfb0d6c86b67a0e221c842949f869
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/18/eecd3965af2c0c61e86f1f8ebc0750
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bc/461354ad24377c6d42ac4a80cd881d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/52/29adbac4fea1d062c903ab588ef8cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5d/58856219923bb8d5e2be393ae53329
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/76/d0d166e2512facff485cc959e8a7ab
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/88/8013233f33399acb1df5b9d7f2c936
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ee/698341104d59199751d68811c2c5b0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f9/1018e9069f0005acc2f8366c20ce39
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/52/969f31fe073c116bc33eb4adaf820a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ef/8b9bf9f21338b9695fab4d0518c397
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f0/da525cc97895ac2f4777974917ec17
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/33/b94a8504e824a2fc324248d8261774
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/28/add5bf37cb63f65d7f38f4158da67c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/55/816890f646b950c95497edbd1e2a1c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8b/868862b0dd4cc77c1dffe29ff332af
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a3/9f770b7216ae649ffa4e47dfad5fd2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0f/6f860b0ddfca2b6a808a5b6dffb0bc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0f/da9830408cebb45e862a5fe0507535
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ed/3f505169f1fc76b62937a6ac2178a4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/22/cec3478467e8e11da1d207d1bad7bd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/22/3d1ad8088a6eb04f995336df2022d8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d5/3a463d2d59704f30243ef1e07bee01
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/31/ad6d40839ef758fe556a3a37e4a498
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b8/f171554d5cf8075cd37c0968c23905
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/40/731c6c81bf88eb544f49d98524a0c8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6a/459e825ed572264d0e27f8282a586e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/87/dbce45a35f42b4dbef85f95d2a6316
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/17/e313ee57d3c1e9b989a0e499621d88
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4f/114f82503ab8b612f526bcd140cceb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3e/2e8c231bdd701ab54062c79fb5f39b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/87/8338b76ab13921b9582349454ec649
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8e/ac5fdd5bfbdade8a54ca85e5eb995e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8f/17962f7e1b294a2b6bcac2c57413f4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/74/ef7f8805dba40a9bf3a87a64342db3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f4/3bb881e5e1e37113c27747b9bfb63d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4f/a19597a8df650f621c64310c0d0625
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3b/423aea0ffbb5f0d2b4b32d258cd95b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/63/27b27503ae7110bb0bc6eaacf3604e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/43/f0cf924179b255088a649c6ea66149
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fa/ca5a52efe90974c25f6253f75736d3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/38/1f0e5f1368e551092749c0093be49b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a6/4857e00c41a94b45a7cc077c6cc56c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f5/c35ba4caa1706df024e408084e177e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/be/12b506c81d4c24d144a31c3f554f56
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8a/018a1e10843ddd3c4fa3e2d08635c5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1d/4406fe67d10de78320caa89c5cefda
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e9/37b3efecc55cfd0074dbbe29e8b8b0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/58/3aeefd365fe75ad3c0777bfa12bd8d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/63/a5ba999cf7e33a6b0133f7bbf00a68
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d6/623fdfa0295f693f138350666cbd59
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/24/068e555de9d5955972dd86bf46f738
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d8/8bc7c7285f0c96b0c9ad4c58c8826f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f0/bfe5d4efee52f3e0309b190edc2565
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/91/50d482c7024d3d1e7fd064d62111a6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/913dcff335b83c9340e57f072b24d3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/81/12fe226dae71adbe4ce44550e8aaba
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1b/5faaa33f774cd725011791f0d37831
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/05/75cf90f5fa0fce2a5df328530d5160
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c3/67930a9404d0f185fa90d211c89df2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/52/1600f8c372b06354669ccc988b7551
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4d/cce434475a7d55e928091ceab5417d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/37/54ab3f3bebaca21ecac9d0eef34520
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/50/5f43e95d3659d7ebb302abc81fb107
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a1/9019cad9726c9952ce45d566315da6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/57/40c462ad1cf0015433e513fcb08007
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dd/b689b3f3055674941645868277f266
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/df/7dd5a0113a44dd3709243057f6c38e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f9/97eead32d9d7587b3c346bf31dd1ef
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dd/2206cd6efb4a99fff3829d724bcd40
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/db/08e3c428b157228d0433183a2b8013
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b1/e6b71a952bc377d6e7b890fd844832
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0a/cdaa66b4ac5e89b7b57cf1f3e8d3c8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/95/466ba49025710b8b9a41d3ec0aea5f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/96/319441975065f7d6e909a1f2c0daae
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/69/893cf1cfece4498287bd3f7a0088ef
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/48/c56dfa37ebdfc2e9ae2f7a478138de
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6f/e6b31c31577677f7214dbe74e44bd1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/49/40cfb0b60d2bf792277d94d459eba1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ba/33d888e59eef95207d61734cd0fc24
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bf/414ab94442c4656f30eb428888ab49
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/81/4d428d00f204f114cf391f01a0f1b4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7d/847c830425ce6bd5c400c7757dae31
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/ce92d89038c139a2cd7c2c0aece88a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a0/f73290125a0a365a7dc724d2476bfa
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2c/8ba3d8c92c62412124ef9c9d3d7b64
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b7/16afa5059379da18fec6bd0ad48047
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2b/a63433eed2afca3f3d50c63bb336e8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c0/be356bea946dac35ad910cba72278f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1f/81cfb3a10dc1672f6c6975261fdd2b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d9/c5700e6cb57299908862657c099369
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f4/55be6bf96548ec53eb286f3c58e547
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1a/1754a2a76d14a3f1602b2158e544eb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/46/cfeeea77d2fe9a529821d6300e92c9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/70/4ac7e66177c6e84b235bb938e5d215
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/70/4567730a57e9ff219f791693d4e0a0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8d/6748c1d24bfe1ad56aeb0ef8d630f4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a4/b0337388e719eae4020f240e50ee30
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5e/cda0c965d9d63b4838f67aac012fb8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/eb/6597d3c09f5ca500c697a8291578f4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/55/d18c0fa475e132a97992ed3b756c17
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5f/fbda68bb4e96621120dbf4114f61dc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3f/f2951d04843e0a67465a5ba4bda582
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/43/ff695a7dbf03632442e2c88368ab3f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/01/9752fef1d5d61f2643b3030379b6d0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6c/1c5b55a0ef5eb93a7bca1df0ca0a3a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ae/07fa0e4ec38edb89407979b26194e8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/73/6ab67147b2c4996d43a6188ce457f9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/56/9d17787bd7c7eb2fcf85541f6c0db0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3c/55eff4166358fab6193c4196adeec7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/55/a62ee811ff64f43ffc125939c0adc1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3f/159089b8d4dd22895875aba1f66a36
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d3/2f633826c41efe07b37079a26b63b7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/39/980be0aa51abcc1592eecda98def16
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e9/008e19aaebc2f8dd657f35ed7cdd9e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1a/61bade726dd43d5252082a423d22e2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/85/8a625ca385995b730005279fecaeee
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f8/30f6ac9c520795751dfada2e9dfed0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/93/a6efd390948e50268ce492689110cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/69/a4fedcbb7a48e1c5db86c4213851f0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9f/b52be0e643962e452a81f2ad24e517
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1f/9db36e12cbd950b8877af2fe7cca78
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/63/9ef61f4fd09460cf61ec232d50789f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8b/c823ef19c14803e8bdbd74673d323c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0d/2d0ee11fe0d4353a836b794efc6336
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/af/b243dec83b6eb7314b2ee84504a5d4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/63/4f999e90b73175c0cbe58ef184a7cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9d/e16c6dcd27e4982cfc26280e878df3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0b/fd291fffba9155e2e1407d56924d7e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dd/06c57eaaccc1a4dd251e6f07df3d2d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b5/7307db9e9613a62a1c565440e9c2f1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a4/814779e2a3b734c7e0129799d14f13
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9f/f392369b7eaedb0a2dcdbf98e97d3d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/08/5dcef963d4ee1b2a1ca6c0adb1a2f2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dc/6086aaea75d7a2abdf35c55cb4a243
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cd/a416ff6343ddab965e11270fa9aa94
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/91b1f2e8b2e0b5f098a443b28c5b97
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/97/f31adc375176bb153f509a2ad71789
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2b/52b63b332077a2f7d1a5b38d9158c7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/98/10a871e3e2b8072bfe92a77e4f28a3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/48/317edb180a7629b89bd8fd8dcb7b11
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/73/787a565cebc739ba3b8ba5e286550c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/31/4de6ec552ea760ecd0bc7871444dce
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1a/c185ec739bf2910afb93022969e233
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/88/61048f131dff0381c64cca3bf37f8a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/07/e07095c09ed65216488970394d0602
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7e/7669149f199ab84a9d7a745fd8c8d3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d9/b3a55cd3e33caa17d0a47b68235cf8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/68/ea9bcc37e1aac8dd6fe477a7df7892
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b1/e1f734d8a753fe7059b67870d9cb12
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0a/f7a647d4410d0dcbbdc27783cbc1ce
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/66/76a5a84430147997f6ef988f4489be
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b8/2ef2a1d7971d81b377b410fbc93e45
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/6d6ff954bfbe40024ed6ed94e3c306
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/56/099cd5692d1bce2e88ca1273649ac5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/cf35fa86003021ca1083a969422318
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/45/06075a426a5702704ccf822be8b9eb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ba/a90ec961d2e5e7cf057473510ab0b7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a1/075a94a915113b116f541099966226
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7e/1475d35334cc4ac047e42a034c7568
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/93/71bea52a99e094c18cccee69cf4b12
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/58/c17c58e2255ae94f4d246240c1c990
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/23/d7346331750d8a27c25e034bf5d1ec
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a6/adea600ed6b148de3b2cc0d56a728d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ba/7eeceefbeb50bff6c286bed1c81327
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3f/8d4472867cbfbbec403a803cd5d7d3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/57/c7f792f464ed361645d1e5a20ff910
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2c/0950ab79873302f3a9b924c4126a85
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/16/95e04f4463caec3f8c49016d2c413f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/8c2b697f389e1fd5e5b31029964037
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/73/c68cbf1cafa4f6ac3c3ec0d1184921
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/85292014424c3cad856c8eb1a8b523
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/11/1bc27f1b922b5a3597f6c8f0ebc1b9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/34/2c9cad39f6ad2b654f44221cb4e8ad
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c0/3635f5a23fe6c33436eb0d929950a6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cc/402682b62bf5a84460b6d4e9946a8e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/14/966dc0e8289a87aa5888e9f1c54884
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bb/0e2876aac4c7ca6f08296c3e173497
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9b/fb72377d16a2e86757107e7833e3f3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/da/4023e0a17d051a16b361fd8d03f690
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f1/6e41aade68c4e0f4e42e4c546ff9b1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a2/a769911830d5509a3f8f9fa82f9945
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f3/f3de7c00279236b2a143fc1bb692e5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/26/967a72f829a625000e36b67ee4518d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0c/57a32a0e033443a2b45f3856bc6ad5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/42/3d4803a36a7a38e5367245a879c735
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e6/c75d3e5deafb4b39e4f1b032484065
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a8/fae16f0d730caa52012ca2d94a5d9d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/aa/61af484718b2bf7921794fb03b2289
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/51/2915c153fdc4a8dd4d6a45ee6689fe
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/10/0fe5ef9cac96beb5a77cb2827090a0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fc/3c05e94a0de9c86d4de31c2fa1b5b6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/67/7913b72ac990b66322a8e8c754b8c1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/57/411056e12239c1d31b9355e9c98005
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dd/4205626774e2cd21919aa47e7837d2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e6/0fda6cd70d4abec84e9d194fdf5efa
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8c/398ea49c2fd9726dda2e4d999b17c2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1a/65b1383817a5a47c04102a24a7fc7a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/38/e8fda0ab5d917c5af8627475baf4c0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8c/e9110de026f6c2a5da28f7318da207
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e7/8e14900444b028dc058625c725d71e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/51/b8163602fae83f1e1b81349037ddd8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/19/2a67b8dc4667d1bf132a88ceee3232
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3d/e5b68f800b8880fd246b2473d54273
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/22/898485c1655222a3cc89edddd13fa3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/41/1ff0b77aa28e3cfd414d38cfa3c9c7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a3/f1ba4f27b4da6eca80ddb30a3ad253
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8f/cf028619bc952e4f3e673bfe0d4d70
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b3/687a400c707c0392238588e599f1e9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d7/7cccb8673d3e397cb7ae68493c3fc9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/5b369c303d7d57a36410a2743f3c6c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b8/b1b1ee6146a9f9c0a3809ed0ebdd04
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/19/6448fcff3c420621d1116f98cb3958
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1d/9f7843ff3550a084ba33347d5bdc31
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e2/df88cba197696d0699a7841233a7e6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/86/9f815e3f52009d5ea513c059e3c487
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/2400c257a09bbbf610b9d9d0c46231
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a8/48d5e8f9b0b9c8ad61b0028f451627
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/68/f3740738bec6bf16d1b29fad2687c5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0e/77e7c821b05ac228e2dd293f510acc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/05/d22e2425d5f4b86992bcef7e295843
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/67/a75cdff6d93d2fb135f2d899240870
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/20/f593061b3f07d8e30248cc0cb41d08
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/97/cbf814a420f1318398592cd5a86341
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7b/65bba47b193e8898a3abef3b56d85a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/86b8af3ce6b942b3e69229d2397893
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b9/f53bd2d5a8100062eebcb035994d11
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7a/bb6eedf7c53c1cc4cc0d6f9af453de
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/06/db59ed728763c94b166fb5e5179c00
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e2/154d9c04a95b26a79c4dfb11b31647
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0c/19ba29b4ded72f92508f498ec068cb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e0/fd509bdd8d275e401664c5698cff28
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ba/a88e717cfbd4bdb400b4d12786eae1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/df/83811386412783449b6621ec3dd65a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7c/28c6a9fe11d845122906012296aeda
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3a/ee656d69c25db39e517214f8741bec
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/91/1ff43c91b78f92ee95d3b5487fd90f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/80/94743c03d2350558e3cd75cee1ab45
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/86/84a68cddb6c06406cb7aa2bfb7e9e7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9d/4e99da8fa61385e60d336b8451e0ae
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a7/9025cfc19a304f847318f3c8456231
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/18/83c5978805f7dd7d4789e8539e3af4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/46/63246b79df7c63a0a5e6942241d10c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/85/53ca47ae2297443c97fd464fb37dba
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9b/00c73cb72b0fb398098c90261e16cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/80/51df155efeefc20dcc0ff72782ba26
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bc/0342757efbfce8d7bd82079ba9696c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cb/e18d12d682866350a056527b7aefc6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/de/218d5d739803b25c853daf7006cc62
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cc/4a5a7f36fa4d0a563316533c4c8636
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ff/946442f26d56bdbc8c84751ed91c13
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a9/0c9025b8b8c3c4ce690d4997c8f037
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ef/54ae0757e230cc0d8714cd4663959c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a8/fff1c1741b96dc4b8c8c9ea06c8242
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c3/395c6a93fe0d58c4448ed296056f1e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/21/3cfbbc714f79596dcac450c27e5ffb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c7/49f515a48c4814b9392a8a850b390b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/60/27a814acbb03970bf9c520e6f9b7cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7d/371905bfcf0b821c7befcc3f9cdbca
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/91/273fccf8c6e48adf0c362972d98b84
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/37/8bd17068d139ff2363e570883c13db
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/91/07fb57dd2528f032117d7b9c58b298
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/37273578a0d71317e12ce10a0cfd8f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3a/387875468697d1e8cd1f97085df9e5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/de/2a7b82cc0d021626fc5699e5583f71
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1d/619fd56fd55f63f4d6e2135d23825c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ad/656070bfb6db60187213fbb43c311f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/13/549710f24c082bd1dbd0f69a6bcb4f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c8/f1d301441aafbc150784d913f8c7c1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fb/7b79f206548973b5777cc6008921ef
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a2/afbcb7df142ea381e583097e1cd74c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e7/8dd5367213391cd96a220354abb96a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d6/cf3b99e97ebe5b1c03739d35659411
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6e/76b0795b917fe282087bfc78b69879
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/efd707fc0cbd503198666980cf820e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/90/5b93ba5ae44006ef84cf3e135042ac
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/42/af061740ed493d41b2f0d69076e431
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/58/cde50bc2bf69f9b59afdcd6c020d13
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d2/66508dfdeeb380964c801c2b161461
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a3/fd553f5d9c9411510bda6410402545
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9e/01a5aaade1eed01c5a9c121f69a3ca
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/68/936a4329aa35e7a490758d3037f368
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b4/4a830990b42e18fa55d28f523778a0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/69/7df720275e17ca06845aa88f9ab7a7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6e/d7e68d269a29dd434b40a263bdde12
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/60/67063190dbc7979995e2522acfc350
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3b/c4ed00548bf6e4004a7c3370d2f8cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/09/77f79e32a0bdd45211933ad8a302c6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/85/6295bc22c3241ec906ee7f61056338
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/dd4633f737780b508fd33f4668dedb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a2/c09f81a68abe861820e03274e7054e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/63/ed2e915835ad20ad72f8549dd1b157
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d0/ad5bb70272acfc717b1d1b133c63d8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e9/73eb3a4b513fbcbd39498434285c25
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b1/4a97cbf78340fbc87235a58190e831
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d3/e4bef66fb7c0fda720c2a2562ef52a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3e/9edd35e081aabae6f863635c61a046
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/96/d346ddad8f5c6f313b9be887faa4b2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d2/0da435cf0ea27482bf099be8e55f56
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7e/c2c0d6702bedd5d69f924aea550439
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9d/f95f44583edccebdd70fdac50104fb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cb/802c5c8f430fc44a3ee7fe384e50c9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/f7c866f2b9d6321579ed42bddc7528
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/09/47046e9538f9ab86e8cfcd95f48f05
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/39/cdc0b366d550f3231c389976315203
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/53/dba21812b9d7151185bc8a072adf9c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/60/703ea1bee3525ab984d4fc0b528ef4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0b/0d95bae28e14f456a5b78d59f5ccfe
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dd/8fe59f101448c2f9cff11fe2c2f266
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/93/bb2beef03c34573c2ea6c500062409
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f9/18a9c8f1ae57a01f3b242323296397
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4c/3dbd948e81fb3d3262292341916c91
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4c/d1a622f7c0856fe10296c4204e34b6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4f/60a27c5491cd26270934f75dc0e14c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4c/5e1032888aef7f716ffb2da129731f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8a/8f9cbae69693fa02d56eaa55ebfc0c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fb/481a64533a4027fdcfc1162929f513
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f3/0abeab7d6077d8be552e09bf1eb604
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/39/bde7e250bd8d157dd6887d62e68918
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/67/74df513b583149046d74e7bc313955
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/84/02c2e61443260583be3781442c976f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/45/90815ae3ac28eae219399730d6aaf1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/25/08262004c9c15144443e7f5c7741cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c5/32e5f8d0300333ebb4447a0599725b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/35/69dc542c9b2531485477622a247844
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3b/874edb7abf23e352520ffde23a1cf1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/07/443ffccf311e93765706ae39eb4a0c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1b/f00c950787cfee564e559a079cb848
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fa/e86c043a41464c19773717620fdee8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ba/d2763c3db64eebaf64d7490ea63944
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1f/f99b83c520c501d66ac94fda0792d1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ba/ffcb8712ff0d592735291e1fa329de
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e0/41dc6316c33c6d98d558f35a412645
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/88/9a7e8dc3a065c3d45d397ffd718aa9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/90/5f6d4b2f65ce09edb8b98858ff2a05
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2a/099ca16b25f8e0894a3a681a44521b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0a/abc06419112259d60ed8e4dfcdc83c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8c/649231c8627c4392457abc456f9f0b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0c/66729f3c53acb25e4470764f7ff724
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/67/c3f151f80023e9aeaf820136e99ee3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3e/80eecf754992573e9a5e53f1dd16cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/cf/06af13227e5e1be7f5399099de7e32
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/77/d153a3de116e30b1af87f0099263d3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/98/e7f7bf31992cdc5ced5e985f2c7796
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ea/b055b03ee506057c7373f03b828395
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a6/33de3f8370c7c2d25ea9c2e70e777c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2c/f33b865230a62e15f18dd524eb57dc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0f/ba9af4bee9fdb5e2ce6bc69535a61a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/d316b214ecf81b386383e37a2086f9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7f/5ee9d0fcffb35d60308714c0570c37
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/02/e57eeca6a6521a17d91e666e42d68e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6b/b157837eb9881bde7ca480d34b1236
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d2/d5671bb4e4e56a22393bcea1b84aa6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/58/419334094ce3a3e6f39d5035ef640b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/96/98ee547cd5d7026e3756cd14987477
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/43/5ed8ec07e9e2039bed8e2ea82bc544
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/44/0c5103ab08335b9be7778e50d3e3d5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7e/0ec0d9e5934d18f392ff0900207337
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3d/44f0ab7c6629f117bb4ff7381a767a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/04/5d3ae8fbd671027bfa923ed19fae07
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/35/8f9a611c25f22f568e500f300425f2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/04/e38273cfb39165ef6e203714f9aca4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3a/6ca1760d9d09a3cdd71c481a2cf4b5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/0d817e202d07b3e67c92ca42f0c45a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f2/737c6f8c122155b9a39d0f9b51427a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e3/3bc7f96e0449f6857c66fcd252f6df
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/10/0622c7e196183144896071b1910132
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/51/6d754583e7afa0927109b355d105a8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/17/056dcd897367feb5c09f13c0b37025
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e4/ca17f39c9d0ca18b3013903b5bed48
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1f/5f86816de181233951abd064d52ddf
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/11/0ddbdc74079d68bdbc3da09e0c82c4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7b/c802a2c5cb30b9fb87fcb02ceb5d8a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ae/291424f1feeef07063c97e23ca157d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f5/1221a509f5b352646877f0898fcf86
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6b/91772c2966e40af4817673f90d365a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/39/79e869c2ff606f985bb256ccaa482c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/47/a2aae6a7c79f451523de34d16c3e9c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/3ccb96081941ac6090003066a3ee75
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/09/6660470b27e642f552ea8c9724e7e2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/81/c936847354d4706ee252de285e8803
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/05/93f7e7187cd34cddb54319ae3c86d0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/61/098d975e3153e6742de3d87dade796
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e3/5072e434025cc3a0849fc1604ede78
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5c/e12a4c353fe4461391a86be973b2ff
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/66/aa57e62db6e5add49be5895c87647f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/af/1c2217228eea21558bef025cf2a521
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7d/b15deadc9457d1eee9d1ff7d0ee1ff
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b8/7e2a37464119cf1caa4c64cd16c9a3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5b/ed512afd96fd5236a6e14f2e9a4f70
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/df/a6f0f0ec2d6d83c4523f49b08c9aef
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d8/85b9a1d7b275ff8ff329cda76ae328
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7a/24817599d688a9355212423bd66b5f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e7/50f9251eecef1b8dee6a0ded0ffe65
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c4/e8e88ba7cd126348892d0989f78e59
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f1/ece81f14f5cfcab0d2b1870100e6b4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a5/0a3be4c178944ad504f659b0c5ed7a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f7/0dc9ea64431673c91ea06e4281e196
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ef/3fc3041db043a4a97b92e3ad79dff3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a6/27343c1021a078046f1d3aa75d3671
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ee/71443bc4f31d371ee083edf1873dda
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7e/ba16f1eb162ebaa042a604a3e7426b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/42/e0dc30219b84aa7848772eb4f44be7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/dc/779ea92e0608cf2525d462658741df
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/56/5f895c695685f5de76a9ed8978427e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b4/a9137aadd59885f26a66ce05c9daa8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/41/baf893553ef83f61417dc69275ef73
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/53/06477a70c5a6eb00324828e9d3a84d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/85/4d071f3a46b4fdeeb360011b03505e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/46/070f9308ee0dc4a89d728dd6af4335
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a2/fcf0a5bc4e0c8b296e921c18efc287
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5c/208f184461f3d3bea4ce0f3641e2ca
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/60/48e7cc7e3b5827f8313aae7b30ec74
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ef/5d752a38830a2be3aea65ab873bbae
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9e/605f4eb981ddab3b52efdc62c94e9b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d0/02565413873014b80b0ef8a250f76a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/efae10628009220141ab4e10cd4ab7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/75/9c1a3445a3ddb9e09f742519c8fcbd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fe/bdbd1734538c1369d648248e0756ac
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e4/973976eae5ed9847e8c1e4a93ab055
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d8/c287b68f1f89992fa37949bb9d7471
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1e/e4e89242ddcf704a6352e0f9715e35
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2f/71d8aa9e93260a6fa78407577cc26e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0c/38eb9ebf0b6644227fc83e0e3c89c3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a3/da5061d11a99bb6db3acf92e7c0c3a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ca/da92377ea4890fa22c0f75ca78cb47
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/11/1a4a2f1c2ec0bc8877096d596111ea
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/13/469877123455c03139b61d78315b97
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/51/25e26116857ad333f6a7fa5e33f2bc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/48/09e60c0c6c5b4e02fc71008c342a4f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7f/b8012f35dbac9be3465aa6d2d95a5a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6b/c349c1881238a6de01e965efab5c4d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ff/5804929b409c9be9bf6b9482d8c12a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5a/af94f2e1f1e1f1f00646ec55303167
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/78/6e955ab50678f4d81c961bf7f67cf5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/11/365dbbca769875f78b8980a85e57bc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ab/0dcc07ec40590db86382ec88ebbb63
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/44/a7442e31868c5a38bb766e35252bfa
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/75/a0171a89d2203ce45468bf397c2507
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/81/19a57935ef68d97ec24f1a75f7e446
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/85/fdbe4eef3fe170b7af7d7a2a7d9d43
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/21/e2044c889ea9cf0e5082fe3affdc3d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8b/73266995cbff222d4f66f9c4092536
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/18/a95bf2a761ad9bf65c660d62861da3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4a/a98bcc202139de66a3c382219ae38c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/53/c1a35171c3747642656140ee88e0d1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/21/11dd2dd6165292dcec60610ceb9577
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f7/faf2f59a1daf098948eae22d2b8b0d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5f/c070d120e72c93b099e1d07835f23c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/62/7ccbda161a7f050c769e970d7be17d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fd/c3ed14f4ea403cf5648728d5a6997b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/76/9acc4f28ea6c4f1442ec851c685636
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/12/69f012225ab5eac857104e364dae8b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/80/93c752d65f86d35570a796cf045cd2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/03/8bcb18326d27f58ddcc9a60dffd757
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/38/aa3554aa5e13bdb4762e18c2508208
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3d/2a30978babca4074531289cd3775d5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9b/e80bffa66dedec05e194fcf8f0985f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c6/992cf92fb0b2595c2a991b818d9f41
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2a/bf679e264385895ff6a910919c7636
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/34/81ca1a3b93b6b5b5ddf61c319139a5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/97/a64ccf33f908c5693b37f341e9f999
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/1b/9abbaa7dd67c9697505aa1f3a0462f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b5/63fccb89a4dfb3d97042b23924fb48
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7c/23dfcde8bd945cc05bde5abcd46c14
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/4b/a7a5d387e5b5283e950c73bfbab91b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d4/f9eec9e9bb8911531179ae38b5b400
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/00/f4cc89e22d52dbc7afca9115ddca62
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/53/c7e0be0705e5ff77e335018adf1814
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0c/b851e0c10a9e2f075b674103218f3b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c8/94034baee273c2778e8ca91f0ad83b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9c/a92ff6e1ee4db28fa1089bb43781fb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/92/d94020c939ee18cf743f1233027fee
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f5/df58127469119410aeff0c4fac2e02
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0a/9fd5dff2ad346d85eb629ae97019af
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e5/90abc035857a27ba34ed18c47b1dc9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/88/db7bd3411923a5c0b63b23bd712412
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/db/30c837c6631737855e75ce06d69e23
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e0/36b8e7cad6e72bf914afd464669ee6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/78/a064febdf12bba840a03b3c6421b29
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/72/400869b005a5d0045caae5884a546a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/09/62b85f30134a5f540dc7b6487166c1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bf/8109e29bfc0bcd81fd2a697c068aa3
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b7/8a016fea42456c608d5470ea1caadb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/47/7974e7ed435982e23c30fe7faa88fa
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/82/304b2c62a73354f83526af2a81e5e4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3a/e6bdbba4e8c90173970e08c1e1de3c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/70/b480083306e3a386c485f5dc54bd4d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/15/122a5b8ecdb362e0e5a5a0bc3d4620
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/07/003022e68d30a625460e0c6c5d62a5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/85/3a7c71f68e07f63ae0aad272aa097a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c5/3452628f8594fde1cd652acc3f13cd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3f/6b645009ba014636bb148ee4485d9f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e2/3ae7e3c3831accaeaabf03d22ee8f1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b1/ee241e0eeed93ce41d7977cedc8da6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/7a/15d59283263514d7c6ee74b2cd5df0
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bd/74662ca5add4bc918cba58c5ac0511
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/0b/0f821a0a8a2c37e00fe52cb36337a9
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/14/18c0e72e12675e4fa8467098317eaa
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f2/0dd73b1d16176bb60fa3d3bda188c8
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b1/e94afd56c7ce2a8137f9cb635ee3dd
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fe/111e05ea3559ca57c431961b88cf82
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/90/f03a6f6eaee6215a6caf98808c2ae6
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3c/7eb39d676b025279c92483cbf5a87c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b2/8309bb5b524ce4d7fe9606fd68f017
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e5/c8510f8217591703a24bc0c34a0616
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a0/359b5892c6ac5230d6caef020df369
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b8/1854b9673562d5a772d6c566ddd7ef
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/67/a805e005ea355ba96d934ccb1e3322
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/87/68b96cd796c06bb7e1bad9dfef78a1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/30/9f7e67f5b0cf1c8065fb7f11cd79a2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/77/a25e04db9f98c283b4fef0ec1a3849
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/b8/42809a7a3f79e2b660327cb2667d8b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6f/ae29240a50aae4e2a13bdba062a200
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f6/3dbd47be2ba5ba41a55802370c02e2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/59/7a38a4511c9b4222c5e700a1d188d5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ac/711e491107e74d988b43d93adc8d39
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/af/720ad277b88fa0551a3129ac52153c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/54/fc4d6914c82f54e4076531a563d8ad
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f8/db65a9038708c6a1aa34d77984de3e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/5f/3257db8482643a3f7f8b2f6584024a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/04/3d2aee54227ea8997e5eab367551e4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/50/d6d13c6aa02285d5bf0ab1802ae4cf
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/29/7a71e360eddf43e9901a18f6c4e5ca
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c7/63b15f046f317e727e7d687c0d3889
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/58/bc98c506505a34039504589f06ca96
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f4/c811fef04d3e156045426552e82543
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fc/44dfa708c6ced0ce1ab058912d592f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/bb/d06765e6bb1ed1b3feb3e6052cd23e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/3f/a92dc2f7a4733ffebdcb4121c4d409
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/fd/9dfe5992e221ce44cc64044069bcdb
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f8/0e172e7cb346e55c17a48d63537f97
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/79/7b260f9f35c3222dd1507c8e66fd13
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a6/f48f80b836ff9ddcb066605447ec8b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/12/985926a7cf286c5893bfb29e17c1a7
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a7/581304ef57a9087309933328d1e36b
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/29/44c0fe52b6f1cbbf5178e7b7d8db54
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/35/6eba11c6ecfac2aebc4d12e72b6476
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f1/2a39787e1c4151c334f0836502c2ae
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/60/23e7bb12ca51bd195087b6acc1e002
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/a2/94d0a2ef62669c3f03faefa6cc3970
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f5/9d4b5133b8719ff8746e873691a6b2
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/87/ea66636b12ba629f91197f03990d5e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/24/65dca61f557f65de3428318507cb3e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d7/ba22063a0360598645976608f9cd26
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/af/0ff759d02ef5af5ce56208ff043704
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/2f/6ea1448ee2c0ff8104aca49eeca540
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/81/bdbfc017c67068ccd8ee3c072940f4
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/55/ae4c98fbbbfbd5e3ec957ae17c972a
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/f7/2a9d645accad08de0211e8f878be62
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/ae/a0c655d42999c19775cbb59ba0fa52
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d4/59b7fd96e4f57aeece56e1b5f0e438
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/6c/928dc4ffae222f67b738f58f5222c5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c3/36f7fdf8adb7f2148efda64733e9b5
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/45/f23e6196d31ee544c8c2d700b7e56e
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/8e/d3056c7d6ec4a5bd26c26b90a7e6ea
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/59/377dea1e049aa718eaecf41b043bde
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/42/45476efcc012fd3f3d39ea6b6d6937
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/75/9cb4cdd07e15fed47794919557447d
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/d3/56105472b6aab122e97a80bccf9371
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/07/4d98ae555f4bfc5b632ea8605110db
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/12/2fc29c4793f45e126c8ce525c5a8cc
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/e5/ce430747d8d763df41f67b85fbb649
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/21/cfe275fec0bfc5528c97d60521c41c
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/21/f8775592c86efdf537fd6f5f287c1f
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/c0/b46e0565fa687dfeba9232470074b1
+Removed /scratch/indikar_root/indikar1/shared_data/hyb_epi2me/work/9c/02591abb2047536eb435be0b39fd1d
+2025-05-02 09:34:49,733 [INFO] Nextflow clean up complete!
+2025-05-02 09:34:49,734 [INFO] Pipeline complete!
