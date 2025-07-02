@@ -1,0 +1,59 @@
+Transcription factor,Targets,Example cell types
+ATF3,H2B,Muscle stem cells
+ATF4,ATF3; HSF1; HSPA8; DDIT4,Gastric chief cells
+Β-CATENIN,ITGA4; ITGA5; ITGA11; ITGAL; NCAM2; CDH1; CDH5; CDH12; CDH18; RELN,Hematopoietic stem cells
+BACH2,IFNG; CD44; CCL1; CCL9; ICAM1; LIF; LTA; GADD45B; TTC39C5,T cells
+C-JUN,BHIHB2; CTGF; CYR61; FOSB; NR4A1; NR4A2; PLAU; RGS2,"Cultured human glioblastoma cells; pancreatic stellate cells"
+CCAAT/EBP BETA,CAVEOLIN-1,Muscle stem cells
+C/EBPΑ,N-MYC,Hematopoietic stem cells
+CTCF,,Hematopoietic stem cells
+DREAM COMPLEX AND REPRESSOR E2FS,ORC1; RAD51; TTK; INCENP; P107; CYCLIN A; CDC2; CDC6; CDC25A,"Mouse embryonic fibroblasts; mouse embryos; human fibroblasts; myoblasts"
+E2FS 1-3,PCNA; CCNE; TOP2A; CDC2A; CDC25A; MCM4; RAD51; BRCA2; EZH2; DHFR; TK; REST,"Rat fibroblasts; neuronal stem cells"
+ERG,ICAM-1; CIAP-2; IL-8,Endothelial cells
+ETS1,BATF; VEGFR1; VEGFR2; TEK; ANGPT2; NRP1; VWF; PECAM1; CDH5,"T cells; endothelial cells"
+EVI-1,,Hematopoietic stem cells
+FOXC,NFATC1,"Hair follicle stem cells; spermatogonial stem cells"
+FOXM1,PARP1; NURR1,Hematopoietic stem cells
+FOXO,ATM; P16/CDKN2A; P21/CDKN1A; MANGANESE SUPEROXIDE DISMUTASE,"Mouse neural stem cells; mouse muscle stem cells; mouse hematopoietic stem cells; endothelial cells; pituitary cells"
+FOXP,IL-7RA; TSPAN8,"CD8 T cells; mammary stem cells"
+GATA6,Α-SMA,Myofibroblasts
+GFI1,P21/CDKN1A,Hematopoietic stem cells
+HES1,P21/CDKN1A; DUSP7; ASCL1,"Human fibroblasts; mouse neural stem cells"
+HLF,,Hematopoietic stem cells
+ID1,,Hematopoietic stem cells
+ID4,,Hippocampal neural stem cells
+IKZF1,TCF7,T cells
+KLF2,DPP2,"T cells; fibroblasts"
+KLF4,SMA; VCAM; TGFB; ACE2,Mouse endothelial cells
+KLF7,CDKN1A/P21; P27,Muscle stem cells
+KLF9,PLA2G7; PLA2G4E; GPLD1; EGFR; FGFR3; NTRK2; LFNG; GABRA1; CHRNA7; GRIN2C; P2RX7; ACSL3; ACSL6; ACSS1; ACSBG1; ACAD12; ACOX1; AKR1B10; ALDH3B1; ALDH4A1; BMP2; BMP4; ITGA3; ITGA10; IGFBP3; IGFBP6; IGFBP7; EMB; ITGA5; IQGAP1; NEUROD4; ZIC3; KCNJ8; KCNQ1,Neural stem cells of the hippocampus
+LEF1,AXIN2; ACOX1; ABCC1; TRIM2; LPAR1,"Muscle stem cells; cultured myoblasts; hippocampal neural stem cells"
+LKLF,C-MYC,Human leukemia T cells
+MECP2,RARA; NR1H3,Liver regeneration mouse model
+MED1,,Hair follicle stem cells
+MEF/ELF4,MDM2,Mouse hematopoietic stem cells
+MXI1,,Human fibroblasts
+MYC,ORNITHINE DECARBOXYLASE; NUCLEOLIN; FIBRILLARIN; CYCLIN D2; CKSHS2; CUL1; CDK4; CDC25A; P21/CDKN1A; SFRP1; DKK1; MYPN; ANKRD1; HHIP,"Human fibroblasts; human mammary epithelial cells; rat fibroblasts; hematopoietic stem cells"
+NF-KB,CYCLIN D1; JUNB; IL-7RA; P27/CDKN1B,"Mouse hematopoietic stem cells; mouse and human T cells; endothelial cells"
+NKX2-3,ULK1,Hematopoietic stem cells
+NOTCH TRANSCRIPTION FACTORS RBPJ,HES1; HEY; CYCLIN D1; COLLAGEN V,"Mouse muscle stem cells; mouse cardiomyocytes; neural stem cells"
+NRF2,CXCR4,Hematopoietic stem cells
+NUCLEAR HORMONE RECEPTORS RARA; NR1H3; NR4A2,,Liver; hematopoietic stem cells
+PAX3,,Mouse muscle stem cells
+PAX7,ID2; ID3,Mouse muscle stem cells
+PBX1,HLF; MEIS,Hematopoietic stem cells
+PPARS,ICAM-1,Endothelial cells
+PU.1/SPI1,ITGAM; FIT3; IL1R1,Mouse hematopoietic stem cells
+REST,NPM1; RPL14; TIPIN; CDC20; RPS6; RAD51,Hippocampal neural stem cells
+RUNX1,FOXP1; FOXO1; KLF2; IL-17A; RORC,CD4 T cells
+SALL2,,Human fibroblasts
+SATB1,NUMB; MYC,Hematopoietic stem cells
+SCL/TAL1,CDKN1A; ID1,Hematopoietic stem cells
+STAT,STAT4; MTOR; CMYC,"Mouse T cells; dental pulp stem cells"
+TCF15,CDKN1C; SOCS2; MCL1; GATA2,Hematopoietic stem cells
+TLE4 (COREPRESSOR),MYF5,Muscle stem cells
+TP53,P21/CDKN1A; GFI1; NECDIN,"Human fibroblasts; T cells; hematopoietic cells; hematopoietic stem cells"
+YAP,HK2; PFK1; PKM2,Mouse embryonic fibroblasts
+YY1,SMC1A; SMC3; SMC4; NCAPG; KIT,Hematopoietic stem cells
+ZEB1,WIF1,Endothelial cells
+ZFP521,RELA,Hematopoietic stem cells
